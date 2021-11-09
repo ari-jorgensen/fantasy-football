@@ -1,5 +1,5 @@
-let svg = d3.select("svg"),
-    margin = {top: 30, bottom: 30, left: 50, right: 15},
+let svg = d3.select("svg.pass-completion"),
+    margin = {top: 40, bottom: 30, left: 50, right: 15},
     width = svg.attr("width") - margin.left - margin.right,
     height = svg.attr("height") - margin.top - margin.bottom;
 
@@ -15,14 +15,20 @@ let colorScale = d3.scaleOrdinal()
     .range(["#00CC00", "#FF6666"])
     .domain(["W", "L"]);
 
+// title
+svg.append("text")
+    .attr("font-size", "11px")
+    .attr("x", (width / 2))
+    .attr("y", 10)
+    .text("Lamar Jackson: 2021 Pass Completion");
 // x-axis label
-g.append("text")
+svg.append("text")
     .attr("class", "axis-label")
     .attr("x", width)
     .attr("y", height - 6)
     .text("Week");
 // y-axis label
-g.append("text")
+svg.append("text")
     .attr("class", "axis-label")
     .attr("y", 0)
     .attr("x", margin.left)
@@ -62,28 +68,9 @@ let pathPoints = [];
 
 d3.csv("data/jackson2021.csv", function(d) {
     return {
-        date: d["Date"],
         week: +d["Week"],
-        team: d["Tm"],
-        opp_team: d["Opp"],
         score: d["Result"],
-        completed: +d["Cmp"],
-        attempted_pass: +d["Att"],
-        percent_cmp: +d["Cmp%"],
-        yards: +d["Yds_P"],
-        td_pass: +d["TD_P"],
-        interceptions: +d["Int"],
-        qb_rating: +d["Rate"],
-        sacked: +d["Sk"],
-        sacked_loss: +d["Yds_L"],
-        yds_per_pass: +d["Y/A_P"],
-        attempted_rush: +d["Rush"],
-        gained_rush: +d["Yds_R"],
-        per_attempt: +d["Y/A_R"],
-        td_rush: +d["TD_R"],
-        fumbles: +d["Fmb"],
-        off_snaps: +d["Num"],
-        percent_snaps: d["Pct"]
+        completed: +d["Cmp"]
     };
 }).then(data => {
     data.forEach(d => {
