@@ -37,6 +37,10 @@ body {
   padding: 0.5rem 4rem;
   font-size: 1.1rem;
 }
+.main-overview-list {
+  padding: 0.5rem 5rem;
+  font-size: 1.1rem;
+}
 .overview-title {
   text-align: left;
   font-family: "Open Sans", "Tahoma", sans-serif;
@@ -66,4 +70,25 @@ footer {
   margin-top: 2rem;
   border-top: solid 1px #ced4d0;
   display: block;
+}
+circle:hover {
+  stroke-width: 2px;
+  stroke: black;
+}
+.tooltip {
+  position: absolute;
+  text-align: left;
+  width: 90px;
+  height: 80px;
+  padding: 4px;
+  font-size: 12px;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+}
+.axis-label {
+  inline-size: 80px !important;
+  overflow-wrap: break-word !important;
+  font-size: 10px;
+  text-anchor: end;
 }

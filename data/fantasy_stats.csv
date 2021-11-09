@@ -1,0 +1,52 @@
+Player,Year,Age,G,FantPos,FantPt,VBD,PosRank,OvRank
+Lamar Jackson,2018,21,16,QB,158,,29,
+Lamar Jackson,2019,22,15,QB,416,152,1,2
+Lamar Jackson,2020,23,15,QB,333,50,10,30
+Lamar Jackson,2021,24,8,QB,196,42,4,17
+Devin Singletary,2019,22,12,RB,119,,31,
+Devin Singletary,2020,23,16,RB,106,,37,
+Devin Singletary,2021,24,8,RB,50,,41,
+Justin Jefferson,2020,21,16,WR,186,60,6,24
+Justin Jefferson,2021,22,8,WR,87,20,17,44
+Dallas Goedert,2018,23,16,TE,57,,20,
+Dallas Goedert,2019,24,15,TE,87,10,10,62
+Dallas Goedert,2020,25,11,TE,70,,20,
+Dallas Goedert,2021,26,8,TE,54,3,11,70
+Ja'Marr Chase,2021,21,9,WR,124,58,2,5
+DeVonta Smith,2021,23,9,WR,66,,32,
+Van Jefferson Jr,2020,24,16,WR,28,,125,
+Van Jefferson Jr,2021,25,9,WR,61,,35,
+Odell Beckham Jr,Year,Age,G,FantPos,FantPt,VBD,PosRank,OvRank
+Odell Beckham Jr,2014,22,12,WR,204,82,5,15
+Odell Beckham Jr,2015,23,15,WR,223,94,5,8
+Odell Beckham Jr,2016,24,16,WR,196,69,4,15
+Odell Beckham Jr,2017,25,4,WR,49,,82,
+Odell Beckham Jr,2018,26,12,WR,153,37,16,41
+Odell Beckham Jr,2019,27,16,WR,127,,31,
+Odell Beckham Jr,2020,28,7,WR,64,,77,
+Odell Beckham Jr,2021,29,6,WR,25,,93,
+Saquon Barkley,2018,21,16,RB,295,159,2,2
+Saquon Barkley,2019,22,13,RB,192,52,10,21
+Saquon Barkley,2020,23,2,RB,9,,122,
+Saquon Barkley,2021,24,5,RB,51,,40,
+Tua Tagovailoa,2020,22,10,QB,135,,30,
+Tua Tagovailoa,2021,23,5,QB,80,,29,
+AJ Dillon,2020,22,11,RB,38,,76,
+AJ Dillon,2021,23,9,RB,53,,38,
+Miles Sanders,2019,22,16,RB,169,28,15,38
+Miles Sanders,2020,23,12,RB,142,12,21,61
+Miles Sanders,2021,24,7,RB,44,,49,
+Nick Folk,2007,24,16,K,130,,,
+Nick Folk,2008,25,16,K,106,,,
+Nick Folk,2009,26,14,K,92,,,
+Nick Folk,2010,27,16,K,131,,,
+Nick Folk,2011,28,16,K,107,,,
+Nick Folk,2012,29,16,K,99,,,
+Nick Folk,2013,30,16,K,132,,,
+Nick Folk,2014,31,16,K,125,,,
+Nick Folk,2015,32,8,K,62,,,
+Nick Folk,2016,33,16,K,109,,,
+Nick Folk,2017,34,4,K,27,,,
+Nick Folk,2019,35,7,K,56,,,
+Nick Folk,2020,36,16,K,112,,,
+Nick Folk,2021,37,9,K,88,,,
