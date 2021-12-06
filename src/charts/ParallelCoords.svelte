@@ -19,7 +19,7 @@
         ["Patrick Mahomes", [56,108,176]]
     ]);
 
-    let margin = {top: 20, right: 10, bottom: 20, left: 10};
+    let margin = {top: 20, right: 10, bottom: 20, left: 30};
 
     let data;
 
@@ -30,7 +30,7 @@
             let width = 1000;
             console.log("HELLO")
 
-            let svg = d3.select("svg");
+            let svg = d3.select("svg.parallel");
 
             let x = new Map(Array.from(dataKeys, key => [key, d3.scaleLinear(d3.extent(data, d => d[key]),
                 [margin.left, width - margin.right])]));
@@ -74,4 +74,4 @@
         });
 </script>
 
-<svg width="1000"></svg>
+<svg class="parallel" width="1000"></svg>

@@ -1,4 +1,5 @@
 // CORE CONFIG
+
 export const themes = {
   'light': {
     'text': '#222',

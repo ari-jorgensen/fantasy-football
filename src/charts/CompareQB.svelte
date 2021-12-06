@@ -21,6 +21,7 @@
     let yKey = "Cmp";
     let catKey = "Player";
     let categories = ["Lamar Jackson", "Tom Brady", "Drew Brees", "Patrick Mahomes"];
+    // FDC086 7FD27F 386CB0 BEAED4
     let colors = [[127,201,127], [190,174,212], [253,192,134], [56,108,176]];
 
     getData("data/jackson_compare.csv")

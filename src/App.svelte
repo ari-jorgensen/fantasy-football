@@ -23,8 +23,8 @@
 	import Dillon from "./charts/Dillon.svelte";
 	import Sanders from "./charts/Sanders.svelte";
 	import Folk from "./charts/Folk.svelte";
-	import CompareQB from "./charts/CompareQB.svelte";
-	import ParallelCoords from "./charts/ParallelCoords.svelte";
+	import * as d3 from "d3";
+	import * as d3Legend from "d3-svg-legend";
 
 	// STYLE CONFIG
 	// Set theme globally (options are 'light' or 'dark')
@@ -41,6 +41,16 @@
 	onMount(() => {
 		indexPrev = [...index];
 	});
+
+	// let legendScale = d3.scaleOrdinal()
+	// 		.domain(players)
+	// 		.range(colors);
+	//
+	// let legend = d3Legend.legendColor()
+	// 		.scale(legendScale);
+	//
+	// d3.select("svg.legend")
+	// 		.call(legend);
 
 	let animation = getMotion(); // Set animation preference depending on browser preference
 
@@ -129,12 +139,39 @@
 	</p>
 </Filler>
 
+<Filler theme="light">
+	<p class="text-big">
+		For those who are unfamiliar, fantasy football is a competition in which you select NFL players from different
+		teams to form your "fantasy" team. Each player earns points for plays made (touchdowns, yards gained, etc.) or
+		loses points (throwing an interception). You go head-to-head with another person in your league each week, and
+		the player with the most points wins.
+	</p>
+</Filler>
+
 <Section>
 	<h2>Meet the Team</h2>
 	<p>
 		First, allow me to introduce you to the team...
 	</p>
 </Section>
+
+<Divider />
+
+<h2 class="center">Color Legend</h2>
+<div class="legend-grid">
+	<p class="grid-item" style="background-color: rgb(166,206,227)">Lamar Jackson</p>
+	<p class="grid-item" style="background-color: rgb(31,120,180)">Justin Jefferson</p>
+	<p class="grid-item" style="background-color: rgb(178,223,138)">Devin Singletary</p>
+	<p class="grid-item" style="background-color: rgb(51,160,44)">Dallas Goedert</p>
+	<p class="grid-item" style="background-color: rgb(251,154,153)">Ja’Marr Chase</p>
+	<p class="grid-item" style="background-color: rgb(227,26,28)">DeVonta Smith</p>
+	<p class="grid-item" style="background-color: rgb(253,191,111)">Van Jefferson Jr</p>
+	<p class="grid-item" style="background-color: rgb(255,127,0)">Odell Beckham J</p>
+	<p class="grid-item" style="background-color: rgb(202,178,214)">Saquon Barkley</p>
+	<p class="grid-item" style="background-color: rgb(106,61,154)">AJ Dillon</p>
+	<p class="grid-item" style="background-color: rgb(255,255,153)">Miles Sanders</p>
+	<p class="grid-item" style="background-color: rgb(177,89,40)">Nick Folk</p>
+</div>
 
 <Divider />
 
@@ -411,10 +448,26 @@
 <Divider />
 
 <Section>
-	<CompareQB />
+	<h3>
+		Comparison: Quarterbacks
+	</h3>
+	<p>
+		Explore the parallel coordinates chart below to compare my quarterback <mark>(Lamar Jackson)</mark> with other
+		top quarterbacks.
+	</p>
+	<img src="./img/qb_compare.png" class="center">
 </Section>
 
-<ParallelCoords />
+<Section>
+	<h3>
+		Comparison: Running Backs
+	</h3>
+	<p>
+		Use the chart below to compare my running backs <mark>(Devin Singletary, Miles Sanders, and Saquon Barkley)</mark>
+		to each other as well as other top running backs in the league.
+	</p>
+	<img src="./img/compare_rb.png" class="center">
+</Section>
 
 <style>
 	/* Styles specific to elements within the demo */
@@ -449,5 +502,24 @@
 	}
 	.other-section {
 		background-color: #606c71;
+	}
+	.sticky {
+		position: fixed;
+		top: 0;
+		width: 100%
+	}
+	.legend-grid {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+	}
+	.grid-item {
+		diplay: grid;
+		text-align: center;
+	}
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
 	}
 </style>
