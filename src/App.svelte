@@ -469,6 +469,19 @@
 	<img src="./img/compare_rb.png" class="center">
 </Section>
 
+<Section>
+	<h3>
+		Comparison: Wide Receivers
+	</h3>
+	<p>
+		Use the chart below to compare my wide receivers <mark>(Ja'Marr Chase, Odell Beckham Jr, and DeVonta Smith)</mark>
+		to each other as well as another top running back in the league.
+	</p>
+	<img src="./img/wr_compare.png" class="center">
+</Section>
+
+<Divider />
+
 <style>
 	/* Styles specific to elements within the demo */
 	.hover-span {
