@@ -511,6 +511,7 @@
 	.legend-grid {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
+		padding: 10px;
 	}
 	.grid-item {
 		diplay: grid;
@@ -521,5 +522,11 @@
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
+	}
+	.top-divider {
+		padding: 15px;
+	}
+	.sticky + .top-divider {
+		padding-top: 102px;
 	}
 </style>

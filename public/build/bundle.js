@@ -50919,7 +50919,7 @@ void main() {
     		c: function create() {
     			div = element$2("div");
     			create_component(scatterchart.$$.fragment);
-    			attr_dev(div, "class", "chart svelte-klx5ni");
+    			attr_dev(div, "class", "chart svelte-ihmct4");
     			add_location(div, file, 182, 4, 5961);
     		},
     		m: function mount(target, anchor) {
@@ -52893,7 +52893,7 @@ void main() {
     			add_location(mark, file, 454, 73, 10929);
     			add_location(p, file, 453, 1, 10852);
     			if (!src_url_equal(img.src, img_src_value = "./img/qb_compare.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "class", "center svelte-klx5ni");
+    			attr_dev(img, "class", "center svelte-ihmct4");
     			add_location(img, file, 457, 1, 10996);
     		},
     		m: function mount(target, anchor) {
@@ -52954,7 +52954,7 @@ void main() {
     			add_location(mark, file, 465, 50, 11162);
     			add_location(p, file, 464, 1, 11108);
     			if (!src_url_equal(img.src, img_src_value = "./img/compare_rb.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "class", "center svelte-klx5ni");
+    			attr_dev(img, "class", "center svelte-ihmct4");
     			add_location(img, file, 468, 1, 11302);
     		},
     		m: function mount(target, anchor) {
@@ -53428,45 +53428,45 @@ void main() {
     			create_component(section15.$$.fragment);
     			t62 = space();
     			create_component(section16.$$.fragment);
-    			attr_dev(h2, "class", "center svelte-klx5ni");
+    			attr_dev(h2, "class", "center svelte-ihmct4");
     			add_location(h2, file, 159, 0, 4660);
-    			attr_dev(p0, "class", "grid-item svelte-klx5ni");
+    			attr_dev(p0, "class", "grid-item svelte-ihmct4");
     			set_style(p0, "background-color", "rgb(166,206,227)");
     			add_location(p0, file, 161, 1, 4724);
-    			attr_dev(p1, "class", "grid-item svelte-klx5ni");
+    			attr_dev(p1, "class", "grid-item svelte-ihmct4");
     			set_style(p1, "background-color", "rgb(31,120,180)");
     			add_location(p1, file, 162, 1, 4807);
-    			attr_dev(p2, "class", "grid-item svelte-klx5ni");
+    			attr_dev(p2, "class", "grid-item svelte-ihmct4");
     			set_style(p2, "background-color", "rgb(178,223,138)");
     			add_location(p2, file, 163, 1, 4892);
-    			attr_dev(p3, "class", "grid-item svelte-klx5ni");
+    			attr_dev(p3, "class", "grid-item svelte-ihmct4");
     			set_style(p3, "background-color", "rgb(51,160,44)");
     			add_location(p3, file, 164, 1, 4978);
-    			attr_dev(p4, "class", "grid-item svelte-klx5ni");
+    			attr_dev(p4, "class", "grid-item svelte-ihmct4");
     			set_style(p4, "background-color", "rgb(251,154,153)");
     			add_location(p4, file, 165, 1, 5060);
-    			attr_dev(p5, "class", "grid-item svelte-klx5ni");
+    			attr_dev(p5, "class", "grid-item svelte-ihmct4");
     			set_style(p5, "background-color", "rgb(227,26,28)");
     			add_location(p5, file, 166, 1, 5143);
-    			attr_dev(p6, "class", "grid-item svelte-klx5ni");
+    			attr_dev(p6, "class", "grid-item svelte-ihmct4");
     			set_style(p6, "background-color", "rgb(253,191,111)");
     			add_location(p6, file, 167, 1, 5224);
-    			attr_dev(p7, "class", "grid-item svelte-klx5ni");
+    			attr_dev(p7, "class", "grid-item svelte-ihmct4");
     			set_style(p7, "background-color", "rgb(255,127,0)");
     			add_location(p7, file, 168, 1, 5310);
-    			attr_dev(p8, "class", "grid-item svelte-klx5ni");
+    			attr_dev(p8, "class", "grid-item svelte-ihmct4");
     			set_style(p8, "background-color", "rgb(202,178,214)");
     			add_location(p8, file, 169, 1, 5393);
-    			attr_dev(p9, "class", "grid-item svelte-klx5ni");
+    			attr_dev(p9, "class", "grid-item svelte-ihmct4");
     			set_style(p9, "background-color", "rgb(106,61,154)");
     			add_location(p9, file, 170, 1, 5477);
-    			attr_dev(p10, "class", "grid-item svelte-klx5ni");
+    			attr_dev(p10, "class", "grid-item svelte-ihmct4");
     			set_style(p10, "background-color", "rgb(255,255,153)");
     			add_location(p10, file, 171, 1, 5555);
-    			attr_dev(p11, "class", "grid-item svelte-klx5ni");
+    			attr_dev(p11, "class", "grid-item svelte-ihmct4");
     			set_style(p11, "background-color", "rgb(177,89,40)");
     			add_location(p11, file, 172, 1, 5638);
-    			attr_dev(div, "class", "legend-grid svelte-klx5ni");
+    			attr_dev(div, "class", "legend-grid svelte-ihmct4");
     			add_location(div, file, 160, 0, 4697);
     		},
     		l: function claim(nodes) {
