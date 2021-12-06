@@ -7,8 +7,6 @@
     "start": "sirv public",
     "deploy": "gh-pages -d public"
   },
-  "author": "Ahmad Barclay",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
@@ -33,6 +31,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "d3": "^7.1.1",
     "sirv-cli": "^1.0.0"
   }
 }

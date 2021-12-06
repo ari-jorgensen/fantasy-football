@@ -21,8 +21,7 @@
     let colors = [[166,206,227]];
 
     getData("data/jackson.csv")
-        .then((result) => (data = result))
-        .then((data) => console.log(data));
+        .then((result) => (data = result));
 
 </script>
 

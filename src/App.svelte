@@ -2,6 +2,7 @@
 	import { setContext, onMount } from "svelte";
 	import { getData, setColors, getMotion } from "./utils.js";
 	import { themes } from "./config.js";
+	import { players, colors } from "./config.js"
 	import Header from "./layout/Header.svelte";
 	import Section from "./layout/Section.svelte";
 	import Scroller from "./layout/Scroller.svelte";
@@ -23,6 +24,7 @@
 	import Sanders from "./charts/Sanders.svelte";
 	import Folk from "./charts/Folk.svelte";
 	import CompareQB from "./charts/CompareQB.svelte";
+	import ParallelCoords from "./charts/ParallelCoords.svelte";
 
 	// STYLE CONFIG
 	// Set theme globally (options are 'light' or 'dark')
@@ -49,82 +51,52 @@
 	let selected;
 	let categories;
 	let catKey = "Player";
-	let color;
-	let colors = [[166,206,227],
-		[31,120,180],
-		[178,223,138],
-		[51,160,44],
-		[251,154,153],
-		[227,26,28],
-		[253,191,111],
-		[255,127,0],
-		[202,178,214],
-		[106,61,154],
-		[255,255,153],
-		[177,89,40]];
 
 	getData("data/fantasy_stats.csv")
 			.then((result) => (data = result))
 			.then((data) => {
 				categories = Array.from(new Set(data.map((d) => d.Player)));
 			});
-
-
-
-
 	// Actions for CHART scroller
 	const chartActions = [
 		() => {
 			selected = null;
-			diameter = 20;
 		},
 		() => {
 			selected = { value: "Lamar Jackson", col: "Player" };
-			diameter = 35;
 		},
 		() => {
 			selected = { value: "Justin Jefferson", col: "Player" };
-			diameter = 35;
 		},
 		() => {
 			selected = { value: "Devin Singletary", col: "Player" };
-			diameter = 35;
 		},
 		() => {
 			selected = { value: "Dallas Goedert", col: "Player" };
-			diameter = 35;
 		},
 		() => {
 			selected = { value: "Ja’Marr Chase", col: "Player" };
-			diameter = 35;
 		},
 		() => {
 			selected = { value: "DeVonta Smith", col: "Player" };
-			diameter = 35;
 		},
 		() => {
 			selected = { value: "Van Jefferson Jr", col: "Player" };
-			diameter = 35;
 		},
 		() => {
 			selected = { value: "Odell Beckham Jr", col: "Player" };
-			diameter = 35;
 		},
 		() => {
 			selected = { value: "Saquon Barkley", col: "Player" };
-			diameter = 35;
 		},
 		() => {
 			selected = { value: "AJ Dillon", col: "Player" };
-			diameter = 35;
 		},
 		() => {
 			selected = { value: "Miles Sanders", col: "Player" };
-			diameter = 35;
 		},
 		() => {
 			selected = { value: "Nick Folk", col: "Player" };
-			diameter = 35;
 		}
 	];
 
@@ -135,6 +107,8 @@
 		}
 		indexPrev[0] = index[0];
 	}
+
+	let playerName = players[0];
 
 </script>
 
@@ -168,7 +142,7 @@
 	<div slot="background">
 		<figure>
 			<div class="col-wide height-full middle">
-				{#if data && xKey && yKey && categories && colors && catKey}
+				{#if data && xKey && yKey && categories && colors && catKey && diameter}
 				<div class="chart">
 					<ScatterChart {diameter} {data} {xKey} {yKey} {categories} {colors} {selected} {catKey} />
 				</div>
@@ -183,8 +157,8 @@
 				<p>
 					This chart shows the data for the team as a whole. It visualizes the total
 					fantasy points per career year for each player. Scroll to see score for
-					individual players. The value mapped to the y-axis is the total number of
-					fantasy points for that player for a given year.
+					individual players. <mark>The value mapped to the y-axis is the total number of
+					fantasy points for that player for a given year.</mark>
 				</p>
 			</div>
 		</section>
@@ -440,6 +414,7 @@
 	<CompareQB />
 </Section>
 
+<ParallelCoords />
 
 <style>
 	/* Styles specific to elements within the demo */

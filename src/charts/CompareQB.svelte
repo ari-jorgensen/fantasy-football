@@ -24,7 +24,7 @@
     let colors = [[127,201,127], [190,174,212], [253,192,134], [56,108,176]];
 
     getData("data/jackson_compare.csv")
-        .then((result) => (data = result)).then((data) => console.log(data));
+        .then((result) => (data = result));
 
 
 </script>

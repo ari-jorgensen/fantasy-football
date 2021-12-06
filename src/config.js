@@ -14,65 +14,32 @@ export const themes = {
   }
 }
 
-// CONTENT CONFIG
-export const regions = [
-	{
-		code: 'E12000001',
-		name: 'North East'
-	},
-	{
-		code: 'E12000002',
-		name: 'North West'
-	},
-	{
-		code: 'E12000003',
-		name: 'Yorkshire and The Humber'
-	},
-	{
-		code: 'E12000004',
-		name: 'East Midlands'
-	},
-	{
-		code: 'E12000005',
-		name: 'West Midlands'
-	},
-	{
-		code: 'E12000006',
-		name: 'East of England'
-	},
-	{
-		code: 'E12000007',
-		name: 'London'
-	},
-	{
-		code: 'E12000008',
-		name: 'South East'
-	},
-	{
-		code: 'E12000009',
-		name: 'South West'
-	}
-];
-
 export const colors = [
-	[32, 96, 149],
-	[39, 160, 204],
-	[0, 60, 87],
-	[17, 140, 123],
-	[168, 189, 58],
-	[135, 26, 91],
-	[246, 96, 104],
-	[116, 108, 177],
-	[34, 208, 182]
+	[166,206,227],
+	[31,120,180],
+	[178,223,138],
+	[51,160,44],
+	[251,154,153],
+	[227,26,28],
+	[253,191,111],
+	[255,127,0],
+	[202,178,214],
+	[106,61,154],
+	[255,255,153],
+	[177,89,40]
 ];
 
-export const datakeys = {
-	imd: 'Overall',
-	income: 'Income',
-	employment: 'Employment',
-	education: 'Education',
-	health: 'Health',
-	crime: 'Crime',
-	housing: 'Housing',
-	environment: 'Environment'
-};
+export const players = [
+	"Lamar Jackson",
+	"Justin Jefferson",
+	"Devin Singletary",
+	"Dallas Goedert",
+	"Ja’Marr Chase",
+	"DeVonta Smith",
+	"Van Jefferson Jr",
+	"Odell Beckham Jr",
+	"Saquon Barkley",
+	"AJ Dillon",
+	"Miles Sanders",
+	"Nick Folk"
+];
