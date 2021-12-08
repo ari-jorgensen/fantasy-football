@@ -1,77 +1,195 @@
 <script>
-    import { getData } from "../utils";
     import * as d3 from "d3";
 
-    const dataKeys = [
-        "Cmp",
-        "Att_p",
-        "Att_r",
-        "Cmp_p",
-        "Yds_p",
-        "Yds_r",
-        "Int"
-    ];
+    // set the dimensions and margins of the graph
+    const margin = {top: 30, right: 50, bottom: 10, left: 50},
+        width = 460 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
 
-    let colors = new Map([
-        ["Lamar Jackson", [127,201,127]],
-        ["Tom Brady", [190,174,212]],
-        ["Drew Brees", [253,192,134]],
-        ["Patrick Mahomes", [56,108,176]]
-    ]);
+    // append the svg object to the body of the page
+    const svg = d3.select("#my_dataviz")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform",
+            `translate(${margin.left},${margin.top})`);
 
-    let margin = {top: 20, right: 10, bottom: 20, left: 30};
+    // Parse the Data
+    d3.csv("data/jackson_compare.csv").then( function(data) {
+        console.log("here")
+        const color = d3.scaleOrdinal()
+            .domain(["Lamar Jackson", "Tom Brady", "Drew Brees", "Patrick Mahomes"])
+            .range([[127,201,127], [190,174,212], [253,192,134], [56,108,176]])
 
-    let data;
+        // Here I set the list of dimension manually to control the order of axis:
+        let dimensions = ["Cmp","Att_p","Att_r","Cmp_p","Yds_p","Yds_r","Int"]
 
-    getData("data/jackson_compare.csv")
-        .then((result) => (data = result))
-        .then(d => {
-            let height = dataKeys.length * 120;
-            let width = 1000;
-            console.log("HELLO")
+        // For each dimension, I build a linear scale. I store all in a y object
+        const y = {}
+        for (i in dimensions) {
+            name = dimensions[i]
+            y[name] = d3.scaleLinear()
+                .domain( [0,8] ) // --> Same axis range for each group
+                // --> different axis range for each group --> .domain( [d3.extent(data, function(d) { return +d[name]; })] )
+                .range([height, 0])
+        }
 
-            let svg = d3.select("svg.parallel");
+        // Build the X scale -> it find the best position for each Y axis
+        x = d3.scalePoint()
+            .range([0, width])
+            .domain(dimensions);
 
-            let x = new Map(Array.from(dataKeys, key => [key, d3.scaleLinear(d3.extent(data, d => d[key]),
-                [margin.left, width - margin.right])]));
-            let y = d3.scalePoint(dataKeys, [margin.top, height - margin.bottom]);
+        // Highlight the specie that is hovered
+        const highlight = function(event, d){
 
-            let line = d3.line()
-                .defined(([, value]) => value != null)
-                .x(([key, value]) => x.get(key)(value))
-                .y(([key]) => y(key));
+            let selected = d.Player
 
-            svg.append("g")
-                .attr("fill", "none")
-                .attr("stroke-width", 1.5)
-                .attr("stroke-opacity", 0.4)
-                .selectAll("path")
-                .data(data)
-                .join("path")
-                .attr("stroke", d => colors.get(d.Player))
-                .attr("d", d => line(d3.cross(dataKeys, [d], (key, d) => [key, d[key]])))
-                .append("title")
-                .text(d => d.name);
+            // first every group turns grey
+            d3.selectAll(".line")
+                .transition().duration(200)
+                .style("stroke", "lightgrey")
+                .style("opacity", "0.2")
+            // Second the hovered specie takes its color
+            d3.selectAll("." + selected)
+                .transition().duration(200)
+                .style("stroke", color(selected))
+                .style("opacity", "1")
+        }
 
-            svg.append("g")
-                .selectAll("g")
-                .data(dataKeys)
-                .join("g")
-                .attr("transform", d => `translate(0,${y(d)})`)
-                .each(function(d) { d3.select(this).call(d3.axisBottom(x.get(d))); })
-                .call(g => g.append("text")
-                    .attr("x", margin.left)
-                    .attr("y", -6)
-                    .attr("text-anchor", "start")
-                    .attr("fill", "currentColor")
-                    .text(d => d))
-                .call(g => g.selectAll("text")
-                    .clone(true).lower()
-                    .attr("fill", "none")
-                    .attr("stroke-width", 5)
-                    .attr("stroke-linejoin", "round")
-                    .attr("stroke", "white"));
-        });
+        // Unhighlight
+        const doNotHighlight = function(event, d){
+            d3.selectAll(".line")
+                .transition().duration(200).delay(1000)
+                .style("stroke", function(d){ return( color(d.Player))} )
+                .style("opacity", "1")
+        }
+
+        // The path function take a row of the csv as input, and return x and y coordinates of the line to draw for this raw.
+        function path(d) {
+            return d3.line()(dimensions.map(function(p) { return [x(p), y[p](d[p])]; }));
+        }
+
+        // Draw the lines
+        svg
+            .selectAll("myPath")
+            .data(data)
+            .join("path")
+            .attr("class", function (d) { return "line " + d.Player } ) // 2 class for each line: 'line' and the group name
+            .attr("d",  path)
+            .style("fill", "none" )
+            .style("stroke", function(d){ return( color(d.Player))} )
+            .style("opacity", 0.5)
+            .on("mouseover", highlight)
+            .on("mouseleave", doNotHighlight )
+
+        // Draw the axis:
+        svg.selectAll("myAxis")
+            // For each dimension of the dataset I add a 'g' element:
+            .data(dimensions).enter()
+            .append("g")
+            .attr("class", "axis")
+            // I translate this element to its right position on the x axis
+            .attr("transform", function(d) { return `translate(${x(d)})`})
+            // And I build the axis with the call function
+            .each(function(d) { d3.select(this).call(d3.axisLeft().ticks(5).scale(y[d])); })
+            // Add axis title
+            .append("text")
+            .style("text-anchor", "middle")
+            .attr("y", -9)
+            .text(function(d) { return d; })
+            .style("fill", "black")
+
+    })
 </script>
+<div id="my_dataviz"></div>
 
-<svg class="parallel" width="1000"></svg>
+
+<!--<script>-->
+<!--    import { getData } from "../utils";-->
+<!--    import * as d3 from "d3";-->
+
+<!--    const dataKeys = [-->
+<!--        "Cmp",-->
+<!--        "Att_p",-->
+<!--        "Att_r",-->
+<!--        "Cmp_p",-->
+<!--        "Yds_p",-->
+<!--        "Yds_r",-->
+<!--        "Int"-->
+<!--    ];-->
+
+<!--    let colors = new Map([-->
+<!--        ["Lamar Jackson", [127,201,127]],-->
+<!--        ["Tom Brady", [190,174,212]],-->
+<!--        ["Drew Brees", [253,192,134]],-->
+<!--        ["Patrick Mahomes", [56,108,176]]-->
+<!--    ]);-->
+
+<!--    // let margin = {top: 20, right: 10, bottom: 20, left: 30};-->
+
+<!--    let data;-->
+
+<!--    const margin = {top: 30, right: 10, bottom: 10, left: 0},-->
+<!--        width = 1000 - margin.left - margin.right,-->
+<!--        height = 500 - margin.top - margin.bottom;-->
+
+<!--    // append the svg object to the body of the page-->
+<!--    const svg = d3.select("svg.parallel")-->
+<!--        .attr("width", width + margin.left + margin.right)-->
+<!--        .attr("height", height + margin.top + margin.bottom)-->
+<!--        .append("g")-->
+<!--        .attr("transform",-->
+<!--            `translate(${margin.left},${margin.top})`);-->
+
+<!--    getData("data/jackson_compare.csv")-->
+<!--        .then((result) => (data = result))-->
+<!--        .then(data => {-->
+<!--            let y = {};-->
+<!--            dataKeys.forEach((k) => {-->
+<!--               let name = k;-->
+<!--               y[k] = d3.scaleLinear()-->
+<!--                   .domain(d3.extent(data, function(d) { return +d[name]; }))-->
+<!--                   .range([height, 0]);-->
+<!--            });-->
+<!--            let x = d3.scalePoint()-->
+<!--                .range([0, width])-->
+<!--                .padding(1)-->
+<!--                .domain(dataKeys);-->
+
+<!--            function path(d) {-->
+<!--                let pa = d3.line()(dataKeys.map(function(p) { return [x(p), y[p](d[p])]; }));-->
+<!--                console.log(pa)-->
+<!--                return d3.line()(dataKeys.map(function(p) { return [x(p), y[p](d[p])]; }));-->
+<!--            }-->
+
+<!--            // Draw the lines-->
+<!--            svg.selectAll(".line")-->
+<!--                .data(data)-->
+<!--                .enter()-->
+<!--                .append("path")-->
+<!--                .attr("d",  path)-->
+<!--                .style("fill", "none")-->
+<!--                .style("stroke", d => colors.get(d["Player"]))-->
+<!--                .style("opacity", 0.5)-->
+<!--                .attr("class", "line");-->
+
+<!--            // Draw the axis:-->
+<!--            svg.selectAll(".axis")-->
+<!--                .data(dataKeys).enter()-->
+<!--                .append("g")-->
+<!--                .attr("transform", function(d) { return "translate(" + x(d) + ")"; })-->
+<!--                .each(function(d) { d3.select(this).call(d3.axisLeft().scale(y[d])); })-->
+<!--                .append("text")-->
+<!--                .style("text-anchor", "middle")-->
+<!--                .attr("y", -9)-->
+<!--                .text(function(d) { return d; })-->
+<!--                .style("fill", "black")-->
+<!--                .attr("class", "axis");-->
+
+
+<!--        });-->
+
+<!--</script>-->
+
+<!--<svg class="parallel"></svg>-->

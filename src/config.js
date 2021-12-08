@@ -35,7 +35,7 @@ export const players = [
 	"Justin Jefferson",
 	"Devin Singletary",
 	"Dallas Goedert",
-	"Ja’Marr Chase",
+	"JaMarr Chase",
 	"DeVonta Smith",
 	"Van Jefferson Jr",
 	"Odell Beckham Jr",

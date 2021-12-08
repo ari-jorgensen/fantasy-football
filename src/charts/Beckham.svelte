@@ -29,7 +29,8 @@
 <Section>
     <h2>Odell Beckham Jr: A Closer Look</h2>
     <p>
-        Use the dropdown menu to explore available player stats.
+        Use the dropdown menu to explore available player stats. As a wide receiver, it is especially useful to check
+        out Beckham's catching percentage, number of targets, and receiving yards.
     </p>
 </Section>
 

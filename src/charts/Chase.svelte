@@ -30,7 +30,8 @@
 <Section>
     <h2>Ja'Marr Chase: A Closer Look</h2>
     <p>
-        Use the dropdown menu to explore available player stats.
+        Use the dropdown menu to explore available player stats. For Chase, a wide receiver, the stats to explore
+        closely include receiving touchdowns, catching percentage, and number of fumbles.
     </p>
 </Section>
 

@@ -36,7 +36,10 @@
 <Section>
     <h2>Van Jefferson Jr: A Closer Look</h2>
     <p>
-        Use the dropdown menu to explore available player stats.
+        Use the dropdown menu to explore available player stats. Some particularly interesting stats for this player
+        include the catching percentage (the % of catches made given the total number of targets), the number of
+        fumbles (when a player drops the ball after catching), and both the rushing (running the ball into the end zone)
+        and receiving (catching the ball in the end zone) touchdowns.
     </p>
 </Section>
 

@@ -6,7 +6,7 @@
 </script>
 
 <section style="color: {themes[theme]['text']}; background-color: {themes[theme]['background']}">
-	<div class="col-medium">
+	<div class="col-wide">
 		<slot></slot>
 	</div>
 </section>

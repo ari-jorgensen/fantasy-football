@@ -13,18 +13,13 @@
 	import Arrow from "./ui/Arrow.svelte";
 	import {ScatterChart} from "@onsvisual/svelte-charts";
 	import Jefferson from "./charts/Jefferson.svelte";
-	import Singletary from "./charts/Singletary.svelte";
 	import Goedert from "./charts/Goedert.svelte";
 	import Chase from "./charts/Chase.svelte";
-	import Smith from "./charts/Smith.svelte";
-	import VanJefferson from "./charts/VanJefferson.svelte";
 	import Beckham from "./charts/Beckham.svelte";
 	import Barkley from "./charts/Barkley.svelte";
 	import Dillon from "./charts/Dillon.svelte";
-	import Sanders from "./charts/Sanders.svelte";
 	import Folk from "./charts/Folk.svelte";
-	import * as d3 from "d3";
-	import * as d3Legend from "d3-svg-legend";
+	import ParallelCoords from "./charts/ParallelCoords.svelte";
 
 	// STYLE CONFIG
 	// Set theme globally (options are 'light' or 'dark')
@@ -42,17 +37,7 @@
 		indexPrev = [...index];
 	});
 
-	// let legendScale = d3.scaleOrdinal()
-	// 		.domain(players)
-	// 		.range(colors);
-	//
-	// let legend = d3Legend.legendColor()
-	// 		.scale(legendScale);
-	//
-	// d3.select("svg.legend")
-	// 		.call(legend);
-
-	let animation = getMotion(); // Set animation preference depending on browser preference
+	let animation = getMotion();
 
 	let data;
 	let diameter = 20;
@@ -85,7 +70,7 @@
 			selected = { value: "Dallas Goedert", col: "Player" };
 		},
 		() => {
-			selected = { value: "Ja’Marr Chase", col: "Player" };
+			selected = { value: "JaMarr Chase", col: "Player" };
 		},
 		() => {
 			selected = { value: "DeVonta Smith", col: "Player" };
@@ -143,8 +128,8 @@
 	<p class="text-big">
 		For those who are unfamiliar, fantasy football is a competition in which you select NFL players from different
 		teams to form your "fantasy" team. Each player earns points for plays made (touchdowns, yards gained, etc.) or
-		loses points (throwing an interception). You go head-to-head with another person in your league each week, and
-		the player with the most points wins.
+		loses points (throwing an interception, fumbling the ball, etc.). You go head-to-head with another person in
+		your league each week, and the player with the most points wins.
 	</p>
 </Filler>
 
@@ -154,24 +139,6 @@
 		First, allow me to introduce you to the team...
 	</p>
 </Section>
-
-<Divider />
-
-<h2 class="center">Color Legend</h2>
-<div class="legend-grid">
-	<p class="grid-item" style="background-color: rgb(166,206,227)">Lamar Jackson</p>
-	<p class="grid-item" style="background-color: rgb(31,120,180)">Justin Jefferson</p>
-	<p class="grid-item" style="background-color: rgb(178,223,138)">Devin Singletary</p>
-	<p class="grid-item" style="background-color: rgb(51,160,44)">Dallas Goedert</p>
-	<p class="grid-item" style="background-color: rgb(251,154,153)">Ja’Marr Chase</p>
-	<p class="grid-item" style="background-color: rgb(227,26,28)">DeVonta Smith</p>
-	<p class="grid-item" style="background-color: rgb(253,191,111)">Van Jefferson Jr</p>
-	<p class="grid-item" style="background-color: rgb(255,127,0)">Odell Beckham J</p>
-	<p class="grid-item" style="background-color: rgb(202,178,214)">Saquon Barkley</p>
-	<p class="grid-item" style="background-color: rgb(106,61,154)">AJ Dillon</p>
-	<p class="grid-item" style="background-color: rgb(255,255,153)">Miles Sanders</p>
-	<p class="grid-item" style="background-color: rgb(177,89,40)">Nick Folk</p>
-</div>
 
 <Divider />
 
@@ -197,6 +164,21 @@
 					individual players. <mark>The value mapped to the y-axis is the total number of
 					fantasy points for that player for a given year.</mark>
 				</p>
+				<h3 class="center">Color Legend</h3>
+				<div class="legend-grid">
+					<span class="grid-item" style="background-color: rgb(166,206,227,0.8)">Lamar Jackson</span>
+					<span class="grid-item" style="background-color: rgb(31,120,180,0.8)">Justin Jefferson</span>
+					<span class="grid-item" style="background-color: rgb(178,223,138,0.8)">Devin Singletary</span>
+					<span class="grid-item" style="background-color: rgb(51,160,44,0.8)">Dallas Goedert</span>
+					<span class="grid-item" style="background-color: rgb(251,154,153,0.8)">Ja’Marr Chase</span>
+					<span class="grid-item" style="background-color: rgb(227,26,28,0.8)">DeVonta Smith</span>
+					<span class="grid-item" style="background-color: rgb(253,191,111,0.8)">Van Jefferson Jr</span>
+					<span class="grid-item" style="background-color: rgb(255,127,0,0.8)">Odell Beckham J</span>
+					<span class="grid-item" style="background-color: rgb(202,178,214,0.8)">Saquon Barkley</span>
+					<span class="grid-item" style="background-color: rgb(106,61,154,0.8)">AJ Dillon</span>
+					<span class="grid-item" style="background-color: rgb(255,255,153,0.8)">Miles Sanders</span>
+					<span class="grid-item" style="background-color: rgb(177,89,40,0.8)">Nick Folk</span>
+				</div>
 			</div>
 		</section>
 		<section>
@@ -360,7 +342,11 @@
 <Section>
 	<h2>Let's dive deeper...</h2>
 	<p>
-		Now that we have a better sense of the team as a whole, let's take a closer look at each player as an individual.
+		Now that we have a better sense of the team as a whole, let's take a closer look at each player as an
+		individual. Below, you will find an interactive scatterplot for each player on my team's starting roster. The
+		data shown here is from the 2021-2022 NFL season. The x-axis refers to the week (1 game per week). Use the
+		dropdown menu to toggle the y-axis values. The values will vary slightly depending on the position of the
+		player.
 	</p>
 </Section>
 
@@ -379,7 +365,7 @@
 <Divider />
 
 <Section>
-	<Singletary />
+	<Chase />
 </Section>
 
 <Divider />
@@ -391,19 +377,7 @@
 <Divider />
 
 <Section>
-	<Chase />
-</Section>
-
-<Divider />
-
-<Section>
-	<Smith />
-</Section>
-
-<Divider />
-
-<Section>
-	<VanJefferson />
+	<Barkley />
 </Section>
 
 <Divider />
@@ -415,19 +389,7 @@
 <Divider />
 
 <Section>
-	<Barkley />
-</Section>
-
-<Divider />
-
-<Section>
 	<Dillon />
-</Section>
-
-<Divider />
-
-<Section>
-	<Sanders />
 </Section>
 
 <Divider />
@@ -482,6 +444,8 @@
 
 <Divider />
 
+<!--<ParallelCoords />-->
+
 <style>
 	/* Styles specific to elements within the demo */
 	.hover-span {
@@ -522,13 +486,14 @@
 		width: 100%
 	}
 	.legend-grid {
-		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-		padding: 10px;
+		display: grid !important;
+		grid-template-columns: repeat(4, 1fr);
+		padding: 5px;
 	}
 	.grid-item {
-		diplay: grid;
+		diplay: grid !important;
 		text-align: center;
+		height: 100px;
 	}
 	.center {
 		display: block;

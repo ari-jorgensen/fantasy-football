@@ -1,3 +1,8 @@
+<style>
+    p {
+        font-size: 20px;
+    }
+</style>
 <script>
     import Section from "../layout/Section.svelte";
     import {getData} from "../utils";
@@ -30,7 +35,10 @@
 <Section>
     <h2>Saquon Barkley: A Closer Look</h2>
     <p>
-        Use the dropdown menu to explore available player stats.
+        Use the dropdown menu to explore available player stats. Some particularly interesting stats for Barkley (a
+        running back) include the rushing yards gained (the total number of yards a player gains from running with the
+        ball post-catch/handoff per game) and the rushing touchdowns (running the ball into the end zone for a
+        touchdown).
     </p>
 </Section>
 

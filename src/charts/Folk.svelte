@@ -28,7 +28,8 @@
 <Section>
     <h2>Nick Folk: A Closer Look</h2>
     <p>
-        Use the dropdown menu to explore available player stats.
+        Use the dropdown menu to explore available player stats. Since Folk is a kicker, the stats to pay attention to
+        are the % of field goals & extra points made.
     </p>
 </Section>
 

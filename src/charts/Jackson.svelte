@@ -28,7 +28,8 @@
 <Section>
     <h2>Lamar Jackson: A Closer Look</h2>
     <p>
-        Use the dropdown menu to explore available player stats.
+        Use the dropdown menu to explore available player stats. For a quarterback, stats such as passing/rushing
+        touchdowns, as well as number of fumbles, are particularly useful.
     </p>
 </Section>
 

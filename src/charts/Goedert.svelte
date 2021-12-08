@@ -29,7 +29,8 @@
 <Section>
     <h2>Dallas Goedert: A Closer Look</h2>
     <p>
-        Use the dropdown menu to explore available player stats.
+        Use the dropdown menu to explore available player stats. As a tight end, pay attention to Goedert's number of
+        targets, as well as the number of offensive/defensive snaps.
     </p>
 </Section>
 
