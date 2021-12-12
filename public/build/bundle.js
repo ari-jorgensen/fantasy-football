@@ -45822,7 +45822,7 @@ void main() {
     		c: function create() {
     			div = element("div");
     			create_component(scatterchart.$$.fragment);
-    			attr_dev(div, "class", "chart svelte-1x9zi8n");
+    			attr_dev(div, "class", "chart svelte-1rpsi9k");
     			add_location(div, file, 149, 4, 4427);
     		},
     		m: function mount(target, anchor) {
@@ -46813,45 +46813,45 @@ void main() {
     			t98 = text$1("Team: New England Patriots");
     			add_location(mark, file, 163, 25, 4850);
     			add_location(p0, file, 160, 4, 4664);
-    			attr_dev(h3, "class", "center svelte-1x9zi8n");
+    			attr_dev(h3, "class", "center svelte-1rpsi9k");
     			add_location(h3, file, 166, 4, 4984);
-    			attr_dev(span0, "class", "grid-item svelte-1x9zi8n");
+    			attr_dev(span0, "class", "grid-item svelte-1rpsi9k");
     			set_style(span0, "background-color", "rgb(166,206,227,0.8)");
     			add_location(span0, file, 168, 5, 5056);
-    			attr_dev(span1, "class", "grid-item svelte-1x9zi8n");
+    			attr_dev(span1, "class", "grid-item svelte-1rpsi9k");
     			set_style(span1, "background-color", "rgb(31,120,180,0.8)");
     			add_location(span1, file, 169, 5, 5153);
-    			attr_dev(span2, "class", "grid-item svelte-1x9zi8n");
+    			attr_dev(span2, "class", "grid-item svelte-1rpsi9k");
     			set_style(span2, "background-color", "rgb(178,223,138,0.8)");
     			add_location(span2, file, 170, 5, 5252);
-    			attr_dev(span3, "class", "grid-item svelte-1x9zi8n");
+    			attr_dev(span3, "class", "grid-item svelte-1rpsi9k");
     			set_style(span3, "background-color", "rgb(51,160,44,0.8)");
     			add_location(span3, file, 171, 5, 5352);
-    			attr_dev(span4, "class", "grid-item svelte-1x9zi8n");
+    			attr_dev(span4, "class", "grid-item svelte-1rpsi9k");
     			set_style(span4, "background-color", "rgb(251,154,153,0.8)");
     			add_location(span4, file, 172, 5, 5448);
-    			attr_dev(span5, "class", "grid-item svelte-1x9zi8n");
+    			attr_dev(span5, "class", "grid-item svelte-1rpsi9k");
     			set_style(span5, "background-color", "rgb(227,26,28,0.8)");
     			add_location(span5, file, 173, 5, 5545);
-    			attr_dev(span6, "class", "grid-item svelte-1x9zi8n");
+    			attr_dev(span6, "class", "grid-item svelte-1rpsi9k");
     			set_style(span6, "background-color", "rgb(253,191,111,0.8)");
     			add_location(span6, file, 174, 5, 5640);
-    			attr_dev(span7, "class", "grid-item svelte-1x9zi8n");
+    			attr_dev(span7, "class", "grid-item svelte-1rpsi9k");
     			set_style(span7, "background-color", "rgb(255,127,0,0.8)");
     			add_location(span7, file, 175, 5, 5740);
-    			attr_dev(span8, "class", "grid-item svelte-1x9zi8n");
+    			attr_dev(span8, "class", "grid-item svelte-1rpsi9k");
     			set_style(span8, "background-color", "rgb(202,178,214,0.8)");
     			add_location(span8, file, 176, 5, 5837);
-    			attr_dev(span9, "class", "grid-item svelte-1x9zi8n");
+    			attr_dev(span9, "class", "grid-item svelte-1rpsi9k");
     			set_style(span9, "background-color", "rgb(106,61,154,0.8)");
     			add_location(span9, file, 177, 5, 5935);
-    			attr_dev(span10, "class", "grid-item svelte-1x9zi8n");
+    			attr_dev(span10, "class", "grid-item svelte-1rpsi9k");
     			set_style(span10, "background-color", "rgb(255,255,153,0.8)");
     			add_location(span10, file, 178, 5, 6027);
-    			attr_dev(span11, "class", "grid-item svelte-1x9zi8n");
+    			attr_dev(span11, "class", "grid-item svelte-1rpsi9k");
     			set_style(span11, "background-color", "rgb(177,89,40,0.8)");
     			add_location(span11, file, 179, 5, 6124);
-    			attr_dev(div0, "class", "legend-grid svelte-1x9zi8n");
+    			attr_dev(div0, "class", "legend-grid svelte-1rpsi9k");
     			add_location(div0, file, 167, 4, 5025);
     			attr_dev(div1, "class", "col-medium");
     			add_location(div1, file, 159, 3, 4635);
@@ -47754,9 +47754,6 @@ void main() {
     	let t2;
     	let mark;
     	let t4;
-    	let t5;
-    	let img;
-    	let img_src_value;
 
     	const block = {
     		c: function create() {
@@ -47768,14 +47765,9 @@ void main() {
     			mark = element("mark");
     			mark.textContent = "(Lamar Jackson)";
     			t4 = text$1(" with other\n\t\ttop quarterbacks.");
-    			t5 = space();
-    			img = element("img");
     			add_location(h3, file, 412, 1, 10648);
     			add_location(mark, file, 416, 73, 10765);
     			add_location(p, file, 415, 1, 10688);
-    			if (!src_url_equal(img.src, img_src_value = "./img/qb_compare.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "class", "center svelte-1x9zi8n");
-    			add_location(img, file, 419, 1, 10832);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -47784,15 +47776,11 @@ void main() {
     			append_dev(p, t2);
     			append_dev(p, mark);
     			append_dev(p, t4);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, img, anchor);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h3);
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(img);
     		}
     	};
 
@@ -47807,7 +47795,7 @@ void main() {
     	return block;
     }
 
-    // (423:0) <Section>
+    // (422:0) <Section>
     function create_default_slot_1(ctx) {
     	let h3;
     	let t1;
@@ -47815,9 +47803,6 @@ void main() {
     	let t2;
     	let mark;
     	let t4;
-    	let t5;
-    	let img;
-    	let img_src_value;
 
     	const block = {
     		c: function create() {
@@ -47829,14 +47814,9 @@ void main() {
     			mark = element("mark");
     			mark.textContent = "(Devin Singletary, Miles Sanders, and Saquon Barkley)";
     			t4 = text$1("\n\t\tto each other as well as other top running backs in the league.");
-    			t5 = space();
-    			img = element("img");
-    			add_location(h3, file, 423, 1, 10903);
-    			add_location(mark, file, 427, 50, 10998);
-    			add_location(p, file, 426, 1, 10944);
-    			if (!src_url_equal(img.src, img_src_value = "./img/compare_rb.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "class", "center svelte-1x9zi8n");
-    			add_location(img, file, 430, 1, 11138);
+    			add_location(h3, file, 422, 1, 10854);
+    			add_location(mark, file, 426, 50, 10949);
+    			add_location(p, file, 425, 1, 10895);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -47845,15 +47825,11 @@ void main() {
     			append_dev(p, t2);
     			append_dev(p, mark);
     			append_dev(p, t4);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, img, anchor);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h3);
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(img);
     		}
     	};
 
@@ -47861,14 +47837,14 @@ void main() {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(423:0) <Section>",
+    		source: "(422:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (434:0) <Section>
+    // (432:0) <Section theme="light">
     function create_default_slot(ctx) {
     	let h3;
     	let t1;
@@ -47876,9 +47852,6 @@ void main() {
     	let t2;
     	let mark;
     	let t4;
-    	let t5;
-    	let img;
-    	let img_src_value;
 
     	const block = {
     		c: function create() {
@@ -47889,15 +47862,11 @@ void main() {
     			t2 = text$1("Use the chart below to compare my wide receivers ");
     			mark = element("mark");
     			mark.textContent = "(Ja'Marr Chase, Odell Beckham Jr, and DeVonta Smith)";
-    			t4 = text$1("\n\t\tto each other as well as another top running back in the league.");
-    			t5 = space();
-    			img = element("img");
-    			add_location(h3, file, 434, 1, 11209);
-    			add_location(mark, file, 438, 51, 11306);
-    			add_location(p, file, 437, 1, 11251);
-    			if (!src_url_equal(img.src, img_src_value = "./img/wr_compare.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "class", "center svelte-1x9zi8n");
-    			add_location(img, file, 441, 1, 11446);
+    			t4 = text$1("\n\t\tto each other as well as another top running back in the league. Use your mouse to brush & filter out data.");
+    			add_location(h3, file, 432, 1, 11125);
+    			add_location(mark, file, 436, 51, 11251);
+    			set_style(p, "padding-bottom", "15px");
+    			add_location(p, file, 435, 1, 11167);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -47906,15 +47875,11 @@ void main() {
     			append_dev(p, t2);
     			append_dev(p, mark);
     			append_dev(p, t4);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, img, anchor);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h3);
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(img);
     		}
     	};
 
@@ -47922,7 +47887,7 @@ void main() {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(434:0) <Section>",
+    		source: "(432:0) <Section theme=\\\"light\\\">",
     		ctx
     	});
 
@@ -47991,6 +47956,9 @@ void main() {
     	let t28;
     	let section13;
     	let t29;
+    	let iframe;
+    	let iframe_src_value;
+    	let t30;
     	let divider12;
     	let current;
 
@@ -48173,6 +48141,7 @@ void main() {
 
     	section13 = new Section({
     			props: {
+    				theme: "light",
     				$$slots: { default: [create_default_slot] },
     				$$scope: { ctx }
     			},
@@ -48243,7 +48212,14 @@ void main() {
     			t28 = space();
     			create_component(section13.$$.fragment);
     			t29 = space();
+    			iframe = element("iframe");
+    			t30 = space();
     			create_component(divider12.$$.fragment);
+    			attr_dev(iframe, "width", "80%");
+    			attr_dev(iframe, "height", "991");
+    			attr_dev(iframe, "class", "center svelte-1rpsi9k");
+    			if (!src_url_equal(iframe.src, iframe_src_value = "https://observablehq.com/embed/@ariana/parallel-coordinates-for-data-viz-final?cells=legend%2Cviewof+selection")) attr_dev(iframe, "src", iframe_src_value);
+    			add_location(iframe, file, 440, 0, 11444);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -48309,6 +48285,8 @@ void main() {
     			insert_dev(target, t28, anchor);
     			mount_component(section13, target, anchor);
     			insert_dev(target, t29, anchor);
+    			insert_dev(target, iframe, anchor);
+    			insert_dev(target, t30, anchor);
     			mount_component(divider12, target, anchor);
     			current = true;
     		},
@@ -48576,6 +48554,8 @@ void main() {
     			if (detaching) detach_dev(t28);
     			destroy_component(section13, detaching);
     			if (detaching) detach_dev(t29);
+    			if (detaching) detach_dev(iframe);
+    			if (detaching) detach_dev(t30);
     			destroy_component(divider12, detaching);
     		}
     	};

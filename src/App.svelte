@@ -417,7 +417,6 @@
 		Explore the parallel coordinates chart below to compare my quarterback <mark>(Lamar Jackson)</mark> with other
 		top quarterbacks.
 	</p>
-	<img src="./img/qb_compare.png" class="center">
 </Section>
 
 <Section>
@@ -428,23 +427,23 @@
 		Use the chart below to compare my running backs <mark>(Devin Singletary, Miles Sanders, and Saquon Barkley)</mark>
 		to each other as well as other top running backs in the league.
 	</p>
-	<img src="./img/compare_rb.png" class="center">
 </Section>
 
-<Section>
+<Section theme="light">
 	<h3>
 		Comparison: Wide Receivers
 	</h3>
-	<p>
+	<p style="padding-bottom: 15px">
 		Use the chart below to compare my wide receivers <mark>(Ja'Marr Chase, Odell Beckham Jr, and DeVonta Smith)</mark>
-		to each other as well as another top running back in the league.
+		to each other as well as another top running back in the league. Use your mouse to brush & filter out data.
 	</p>
-	<img src="./img/wr_compare.png" class="center">
 </Section>
+<iframe width="80%" height="991" class="center"
+		src="https://observablehq.com/embed/@ariana/parallel-coordinates-for-data-viz-final?cells=legend%2Cviewof+selection">
+
+</iframe>
 
 <Divider />
-
-<!--<ParallelCoords />-->
 
 <style>
 	/* Styles specific to elements within the demo */
@@ -499,7 +498,6 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 100%;
 	}
 	.top-divider {
 		padding: 15px;
