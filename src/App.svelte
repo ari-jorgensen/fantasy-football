@@ -19,7 +19,7 @@
 	import Barkley from "./charts/Barkley.svelte";
 	import Dillon from "./charts/Dillon.svelte";
 	import Folk from "./charts/Folk.svelte";
-	import ParallelCoords from "./charts/ParallelCoords.svelte";
+	import * as d3 from "d3";
 
 	// STYLE CONFIG
 	// Set theme globally (options are 'light' or 'dark')
@@ -144,11 +144,13 @@
 
 <Scroller {threshold} bind:index={index[0]} splitscreen={true}>
 	<div slot="background">
-		<figure>
-			<div class="col-wide height-full middle">
+		<figure class="main-scatter">
+			<p class="y-label">Fantasy points</p>
+			<p class="x-label">Year</p>
+			<div class="col-wide middle">
 				{#if data && xKey && yKey && categories && colors && catKey && diameter}
 				<div class="chart">
-					<ScatterChart {diameter} {data} {xKey} {yKey} {categories} {colors} {selected} {catKey} />
+					<ScatterChart padding={15} {diameter} {data} {xKey} {yKey} {categories} {colors} {selected} {catKey} />
 				</div>
 				{/if}
 			</div>
@@ -403,71 +405,22 @@
 <Section>
 	<h2>Comparisons</h2>
 	<p>
-		Let's now take a look outside of the team. Scroll down to explore comparisons by player.
+		Let's now take a look outside of the team. Scroll down to explore comparisons by player. Use the dropdown menu
+		to select a position, then explore the parallel coordinates chart using the brushing and filtering interaction
+		tools.
 	</p>
 </Section>
 
 <Divider />
 
-<Section>
-	<h3>
-		Comparison: Quarterbacks
-	</h3>
-	<p>
-		Explore the parallel coordinates chart below to compare my quarterback <mark>(Lamar Jackson)</mark> with other
-		top quarterbacks.
-	</p>
-</Section>
-
-<Section>
-	<h3>
-		Comparison: Running Backs
-	</h3>
-	<p>
-		Use the chart below to compare my running backs <mark>(Devin Singletary, Miles Sanders, and Saquon Barkley)</mark>
-		to each other as well as other top running backs in the league.
-	</p>
-</Section>
-
-<Section theme="light">
-	<h3>
-		Comparison: Wide Receivers
-	</h3>
-	<p style="padding-bottom: 15px">
-		Use the chart below to compare my wide receivers <mark>(Ja'Marr Chase, Odell Beckham Jr, and DeVonta Smith)</mark>
-		to each other as well as another top running back in the league. Use your mouse to brush & filter out data.
-	</p>
-</Section>
-<iframe width="80%" height="991" class="center"
-		src="https://observablehq.com/embed/@ariana/parallel-coordinates-for-data-viz-final?cells=legend%2Cviewof+selection">
+<iframe width="100%" height="1050"
+		src="https://observablehq.com/embed/@ariana/parallel-coordinates-for-data-viz-final?cells=viewof+position%2CchartLegend%2Cviewof+selection">
 
 </iframe>
 
 <Divider />
 
 <style>
-	/* Styles specific to elements within the demo */
-	.hover-span {
-		display: flex;
-		justify-content: center;
-		text-align: center;
-		background:rgba(0, 0, 0, 0.7);
-		position:absolute;
-		opacity:0;
-		transition:all 300ms ease-in-out;
-		-webkit-transition:all 300ms ease-in-out;
-		-moz-transition:all 300ms ease-in-out;
-		-o-transition:all 300ms ease-in-out;
-		-ms-transition:all 300ms ease-in-out;
-	}
-	.hover-span:hover {
-		opacity: 1;
-	}
-	.label-block {
-		display: inline-block;
-		text-align: right;
-		width: 80px;
-	}
 	select {
 		width: 210px;
 	}
@@ -475,14 +428,6 @@
 		margin-top: 45px;
 		height: 100vh;
 		width: calc(100% - 5px);
-	}
-	.other-section {
-		background-color: #606c71;
-	}
-	.sticky {
-		position: fixed;
-		top: 0;
-		width: 100%
 	}
 	.legend-grid {
 		display: grid !important;
@@ -494,15 +439,24 @@
 		text-align: center;
 		height: 100px;
 	}
+	.x-label {
+		position: absolute;
+		bottom: 60px;
+		right: 30px;
+		font-weight: bold;
+	}
+	.y-label {
+		position: absolute;
+		top: 10px;
+		left: 5px;
+		font-weight: bold;
+	}
 	.center {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.top-divider {
-		padding: 15px;
-	}
-	.sticky + .top-divider {
-		padding-top: 102px;
+	iframe {
+		border: none;
 	}
 </style>

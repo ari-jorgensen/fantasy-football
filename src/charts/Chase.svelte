@@ -31,14 +31,15 @@
     <h2>Ja'Marr Chase: A Closer Look</h2>
     <p>
         Use the dropdown menu to explore available player stats. For Chase, a wide receiver, the stats to explore
-        closely include receiving touchdowns, catching percentage, and number of fumbles.
+        closely include <mark>receiving touchdowns</mark>, <mark>catching percentage</mark>, and number of
+        <mark>fumbles</mark>.
     </p>
 </Section>
 
 <Media col="wide">
     {#if data && xKey && yKey }
         <div class="media" style="height: 400px">
-            <ScatterChart diameter={20} {data} {xKey} {yKey} {colors} />
+            <ScatterChart diameter={15} {data} {xKey} {yKey} {colors}/>
         </div>
         <div class="media" style="margin-top: 80px">
             <h3 style="padding-bottom: 10px">Explore the data</h3>

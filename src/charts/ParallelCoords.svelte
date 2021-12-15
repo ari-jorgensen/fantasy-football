@@ -16,7 +16,7 @@
             `translate(${margin.left},${margin.top})`);
 
     // Parse the Data
-    d3.csv("data/jackson_compare.csv").then( function(data) {
+    d3.csv("data/qb_compare.csv").then( function(data) {
         console.log("here")
         const color = d3.scaleOrdinal()
             .domain(["Lamar Jackson", "Tom Brady", "Drew Brees", "Patrick Mahomes"])
@@ -142,7 +142,7 @@
 <!--        .attr("transform",-->
 <!--            `translate(${margin.left},${margin.top})`);-->
 
-<!--    getData("data/jackson_compare.csv")-->
+<!--    getData("data/qb_compare.csv")-->
 <!--        .then((result) => (data = result))-->
 <!--        .then(data => {-->
 <!--            let y = {};-->
