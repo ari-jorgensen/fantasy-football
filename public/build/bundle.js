@@ -19991,7 +19991,7 @@ void main() {
     	return block;
     }
 
-    const padding = 20;
+    const padding = 10;
 
     function instance$c($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
@@ -20838,7 +20838,7 @@ void main() {
     	return child_ctx;
     }
 
-    // (28:0) <Section>
+    // (30:0) <Section>
     function create_default_slot_1$8(ctx) {
     	let h2;
     	let t1;
@@ -20862,10 +20862,10 @@ void main() {
     			mark1 = element("mark");
     			mark1.textContent = "fumbles";
     			t6 = text(", are particularly useful.");
-    			add_location(h2, file$a, 28, 4, 686);
-    			add_location(mark0, file$a, 30, 98, 830);
-    			add_location(mark1, file$a, 31, 48, 900);
-    			add_location(p, file$a, 29, 4, 728);
+    			add_location(h2, file$a, 30, 4, 789);
+    			add_location(mark0, file$a, 32, 98, 933);
+    			add_location(mark1, file$a, 33, 48, 1003);
+    			add_location(p, file$a, 31, 4, 831);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -20888,14 +20888,14 @@ void main() {
     		block,
     		id: create_default_slot_1$8.name,
     		type: "slot",
-    		source: "(28:0) <Section>",
+    		source: "(30:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:4) {#if data && xKey && yKey }
+    // (39:4) {#if data && xKey && yKey }
     function create_if_block$9(ctx) {
     	let div0;
     	let scatterchart;
@@ -20955,20 +20955,20 @@ void main() {
 
     			br = element("br");
     			attr_dev(p, "class", "x-label");
-    			add_location(p, file$a, 39, 12, 1154);
+    			add_location(p, file$a, 41, 12, 1257);
     			attr_dev(div0, "class", "media");
     			set_style(div0, "height", "400px");
-    			add_location(div0, file$a, 37, 8, 1027);
+    			add_location(div0, file$a, 39, 8, 1130);
     			set_style(h3, "padding-bottom", "10px");
-    			add_location(h3, file$a, 42, 12, 1262);
+    			add_location(h3, file$a, 44, 12, 1365);
     			attr_dev(span, "class", "label-block");
-    			add_location(span, file$a, 43, 12, 1329);
+    			add_location(span, file$a, 45, 12, 1432);
     			if (/*yKey*/ ctx[1] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[5].call(select));
-    			add_location(select, file$a, 44, 12, 1381);
-    			add_location(br, file$a, 48, 21, 1571);
+    			add_location(select, file$a, 46, 12, 1484);
+    			add_location(br, file$a, 50, 21, 1674);
     			attr_dev(div1, "class", "media");
     			set_style(div1, "margin-top", "80px");
-    			add_location(div1, file$a, 41, 8, 1205);
+    			add_location(div1, file$a, 43, 8, 1308);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -21054,14 +21054,14 @@ void main() {
     		block,
     		id: create_if_block$9.name,
     		type: "if",
-    		source: "(37:4) {#if data && xKey && yKey }",
+    		source: "(39:4) {#if data && xKey && yKey }",
     		ctx
     	});
 
     	return block;
     }
 
-    // (46:16) {#each Object.keys(dataKeys) as key}
+    // (48:16) {#each Object.keys(dataKeys) as key}
     function create_each_block$7(ctx) {
     	let option;
     	let t_value = /*dataKeys*/ ctx[2][/*key*/ ctx[6]] + "";
@@ -21073,7 +21073,7 @@ void main() {
     			t = text(t_value);
     			option.__value = /*key*/ ctx[6];
     			option.value = option.__value;
-    			add_location(option, file$a, 46, 20, 1481);
+    			add_location(option, file$a, 48, 20, 1584);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -21089,14 +21089,14 @@ void main() {
     		block,
     		id: create_each_block$7.name,
     		type: "each",
-    		source: "(46:16) {#each Object.keys(dataKeys) as key}",
+    		source: "(48:16) {#each Object.keys(dataKeys) as key}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (36:0) <Media col="wide">
+    // (38:0) <Media col="wide">
     function create_default_slot$8(ctx) {
     	let if_block_anchor;
     	let current;
@@ -21155,7 +21155,7 @@ void main() {
     		block,
     		id: create_default_slot$8.name,
     		type: "slot",
-    		source: "(36:0) <Media col=\\\"wide\\\">",
+    		source: "(38:0) <Media col=\\\"wide\\\">",
     		ctx
     	});
 
@@ -22701,7 +22701,7 @@ void main() {
     	return child_ctx;
     }
 
-    // (30:0) <Section>
+    // (32:0) <Section>
     function create_default_slot_1$7(ctx) {
     	let h2;
     	let t1;
@@ -22730,11 +22730,11 @@ void main() {
     			mark2 = element("mark");
     			mark2.textContent = "touchdowns";
     			t8 = text(".");
-    			add_location(h2, file$7, 30, 4, 713);
-    			add_location(mark0, file$7, 33, 20, 899);
-    			add_location(mark1, file$7, 34, 8, 1013);
-    			add_location(mark2, file$7, 35, 58, 1197);
-    			add_location(p, file$7, 31, 4, 758);
+    			add_location(h2, file$7, 32, 4, 819);
+    			add_location(mark0, file$7, 35, 20, 1005);
+    			add_location(mark1, file$7, 36, 8, 1119);
+    			add_location(mark2, file$7, 37, 58, 1303);
+    			add_location(p, file$7, 33, 4, 864);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -22759,14 +22759,14 @@ void main() {
     		block,
     		id: create_default_slot_1$7.name,
     		type: "slot",
-    		source: "(30:0) <Section>",
+    		source: "(32:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (41:4) {#if data && xKey && yKey }
+    // (43:4) {#if data && xKey && yKey }
     function create_if_block$7(ctx) {
     	let div0;
     	let scatterchart;
@@ -22826,20 +22826,20 @@ void main() {
 
     			br = element("br");
     			attr_dev(p, "class", "x-label");
-    			add_location(p, file$7, 43, 12, 1429);
+    			add_location(p, file$7, 45, 12, 1535);
     			attr_dev(div0, "class", "media");
     			set_style(div0, "height", "400px");
-    			add_location(div0, file$7, 41, 8, 1302);
+    			add_location(div0, file$7, 43, 8, 1408);
     			set_style(h3, "padding-bottom", "10px");
-    			add_location(h3, file$7, 46, 12, 1537);
+    			add_location(h3, file$7, 48, 12, 1643);
     			attr_dev(span, "class", "label-block");
-    			add_location(span, file$7, 47, 12, 1604);
+    			add_location(span, file$7, 49, 12, 1710);
     			if (/*yKey*/ ctx[1] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[5].call(select));
-    			add_location(select, file$7, 48, 12, 1656);
-    			add_location(br, file$7, 52, 21, 1846);
+    			add_location(select, file$7, 50, 12, 1762);
+    			add_location(br, file$7, 54, 21, 1952);
     			attr_dev(div1, "class", "media");
     			set_style(div1, "margin-top", "80px");
-    			add_location(div1, file$7, 45, 8, 1480);
+    			add_location(div1, file$7, 47, 8, 1586);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -22925,14 +22925,14 @@ void main() {
     		block,
     		id: create_if_block$7.name,
     		type: "if",
-    		source: "(41:4) {#if data && xKey && yKey }",
+    		source: "(43:4) {#if data && xKey && yKey }",
     		ctx
     	});
 
     	return block;
     }
 
-    // (50:16) {#each Object.keys(dataKeys) as key}
+    // (52:16) {#each Object.keys(dataKeys) as key}
     function create_each_block$6(ctx) {
     	let option;
     	let t_value = /*dataKeys*/ ctx[2][/*key*/ ctx[6]] + "";
@@ -22944,7 +22944,7 @@ void main() {
     			t = text(t_value);
     			option.__value = /*key*/ ctx[6];
     			option.value = option.__value;
-    			add_location(option, file$7, 50, 20, 1756);
+    			add_location(option, file$7, 52, 20, 1862);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -22960,14 +22960,14 @@ void main() {
     		block,
     		id: create_each_block$6.name,
     		type: "each",
-    		source: "(50:16) {#each Object.keys(dataKeys) as key}",
+    		source: "(52:16) {#each Object.keys(dataKeys) as key}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (40:0) <Media col="wide">
+    // (42:0) <Media col="wide">
     function create_default_slot$7(ctx) {
     	let if_block_anchor;
     	let current;
@@ -23026,7 +23026,7 @@ void main() {
     		block,
     		id: create_default_slot$7.name,
     		type: "slot",
-    		source: "(40:0) <Media col=\\\"wide\\\">",
+    		source: "(42:0) <Media col=\\\"wide\\\">",
     		ctx
     	});
 
@@ -23201,7 +23201,7 @@ void main() {
     	return child_ctx;
     }
 
-    // (29:0) <Section>
+    // (31:0) <Section>
     function create_default_slot_1$6(ctx) {
     	let h2;
     	let t1;
@@ -23225,10 +23225,10 @@ void main() {
     			mark1 = element("mark");
     			mark1.textContent = "offensive/defensive snaps";
     			t6 = text(".");
-    			add_location(h2, file$6, 29, 4, 676);
-    			add_location(mark0, file$6, 32, 8, 849);
-    			add_location(mark1, file$6, 32, 55, 896);
-    			add_location(p, file$6, 30, 4, 719);
+    			add_location(h2, file$6, 31, 4, 780);
+    			add_location(mark0, file$6, 34, 8, 953);
+    			add_location(mark1, file$6, 34, 55, 1000);
+    			add_location(p, file$6, 32, 4, 823);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -23251,14 +23251,14 @@ void main() {
     		block,
     		id: create_default_slot_1$6.name,
     		type: "slot",
-    		source: "(29:0) <Section>",
+    		source: "(31:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (38:4) {#if data && xKey && yKey }
+    // (40:4) {#if data && xKey && yKey }
     function create_if_block$6(ctx) {
     	let div0;
     	let scatterchart;
@@ -23318,20 +23318,20 @@ void main() {
 
     			br = element("br");
     			attr_dev(p, "class", "x-label");
-    			add_location(p, file$6, 40, 12, 1143);
+    			add_location(p, file$6, 42, 12, 1247);
     			attr_dev(div0, "class", "media");
     			set_style(div0, "height", "400px");
-    			add_location(div0, file$6, 38, 8, 1016);
+    			add_location(div0, file$6, 40, 8, 1120);
     			set_style(h3, "padding-bottom", "10px");
-    			add_location(h3, file$6, 43, 12, 1251);
+    			add_location(h3, file$6, 45, 12, 1355);
     			attr_dev(span, "class", "label-block");
-    			add_location(span, file$6, 44, 12, 1318);
+    			add_location(span, file$6, 46, 12, 1422);
     			if (/*yKey*/ ctx[1] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[5].call(select));
-    			add_location(select, file$6, 45, 12, 1370);
-    			add_location(br, file$6, 49, 21, 1560);
+    			add_location(select, file$6, 47, 12, 1474);
+    			add_location(br, file$6, 51, 21, 1664);
     			attr_dev(div1, "class", "media");
     			set_style(div1, "margin-top", "80px");
-    			add_location(div1, file$6, 42, 8, 1194);
+    			add_location(div1, file$6, 44, 8, 1298);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -23417,14 +23417,14 @@ void main() {
     		block,
     		id: create_if_block$6.name,
     		type: "if",
-    		source: "(38:4) {#if data && xKey && yKey }",
+    		source: "(40:4) {#if data && xKey && yKey }",
     		ctx
     	});
 
     	return block;
     }
 
-    // (47:16) {#each Object.keys(dataKeys) as key}
+    // (49:16) {#each Object.keys(dataKeys) as key}
     function create_each_block$5(ctx) {
     	let option;
     	let t_value = /*dataKeys*/ ctx[2][/*key*/ ctx[6]] + "";
@@ -23436,7 +23436,7 @@ void main() {
     			t = text(t_value);
     			option.__value = /*key*/ ctx[6];
     			option.value = option.__value;
-    			add_location(option, file$6, 47, 20, 1470);
+    			add_location(option, file$6, 49, 20, 1574);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -23452,14 +23452,14 @@ void main() {
     		block,
     		id: create_each_block$5.name,
     		type: "each",
-    		source: "(47:16) {#each Object.keys(dataKeys) as key}",
+    		source: "(49:16) {#each Object.keys(dataKeys) as key}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:0) <Media col="wide">
+    // (39:0) <Media col="wide">
     function create_default_slot$6(ctx) {
     	let if_block_anchor;
     	let current;
@@ -23518,7 +23518,7 @@ void main() {
     		block,
     		id: create_default_slot$6.name,
     		type: "slot",
-    		source: "(37:0) <Media col=\\\"wide\\\">",
+    		source: "(39:0) <Media col=\\\"wide\\\">",
     		ctx
     	});
 
@@ -23692,7 +23692,7 @@ void main() {
     	return child_ctx;
     }
 
-    // (30:0) <Section>
+    // (32:0) <Section>
     function create_default_slot_1$5(ctx) {
     	let h2;
     	let t1;
@@ -23721,11 +23721,11 @@ void main() {
     			mark2 = element("mark");
     			mark2.textContent = "fumbles";
     			t8 = text(".");
-    			add_location(h2, file$5, 30, 4, 709);
-    			add_location(mark0, file$5, 33, 24, 893);
-    			add_location(mark1, file$5, 33, 59, 928);
-    			add_location(mark2, file$5, 34, 8, 984);
-    			add_location(p, file$5, 31, 4, 751);
+    			add_location(h2, file$5, 32, 4, 812);
+    			add_location(mark0, file$5, 35, 24, 996);
+    			add_location(mark1, file$5, 35, 59, 1031);
+    			add_location(mark2, file$5, 36, 8, 1087);
+    			add_location(p, file$5, 33, 4, 854);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -23750,14 +23750,14 @@ void main() {
     		block,
     		id: create_default_slot_1$5.name,
     		type: "slot",
-    		source: "(30:0) <Section>",
+    		source: "(32:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (40:4) {#if data && xKey && yKey }
+    // (42:4) {#if data && xKey && yKey }
     function create_if_block$5(ctx) {
     	let div0;
     	let scatterchart;
@@ -23817,20 +23817,20 @@ void main() {
 
     			br = element("br");
     			attr_dev(p, "class", "x-label");
-    			add_location(p, file$5, 42, 12, 1212);
+    			add_location(p, file$5, 44, 12, 1315);
     			attr_dev(div0, "class", "media");
     			set_style(div0, "height", "400px");
-    			add_location(div0, file$5, 40, 8, 1086);
+    			add_location(div0, file$5, 42, 8, 1189);
     			set_style(h3, "padding-bottom", "10px");
-    			add_location(h3, file$5, 45, 12, 1320);
+    			add_location(h3, file$5, 47, 12, 1423);
     			attr_dev(span, "class", "label-block");
-    			add_location(span, file$5, 46, 12, 1387);
+    			add_location(span, file$5, 48, 12, 1490);
     			if (/*yKey*/ ctx[1] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[5].call(select));
-    			add_location(select, file$5, 47, 12, 1439);
-    			add_location(br, file$5, 51, 21, 1629);
+    			add_location(select, file$5, 49, 12, 1542);
+    			add_location(br, file$5, 53, 21, 1732);
     			attr_dev(div1, "class", "media");
     			set_style(div1, "margin-top", "80px");
-    			add_location(div1, file$5, 44, 8, 1263);
+    			add_location(div1, file$5, 46, 8, 1366);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -23916,14 +23916,14 @@ void main() {
     		block,
     		id: create_if_block$5.name,
     		type: "if",
-    		source: "(40:4) {#if data && xKey && yKey }",
+    		source: "(42:4) {#if data && xKey && yKey }",
     		ctx
     	});
 
     	return block;
     }
 
-    // (49:16) {#each Object.keys(dataKeys) as key}
+    // (51:16) {#each Object.keys(dataKeys) as key}
     function create_each_block$4(ctx) {
     	let option;
     	let t_value = /*dataKeys*/ ctx[2][/*key*/ ctx[6]] + "";
@@ -23935,7 +23935,7 @@ void main() {
     			t = text(t_value);
     			option.__value = /*key*/ ctx[6];
     			option.value = option.__value;
-    			add_location(option, file$5, 49, 20, 1539);
+    			add_location(option, file$5, 51, 20, 1642);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -23951,14 +23951,14 @@ void main() {
     		block,
     		id: create_each_block$4.name,
     		type: "each",
-    		source: "(49:16) {#each Object.keys(dataKeys) as key}",
+    		source: "(51:16) {#each Object.keys(dataKeys) as key}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (39:0) <Media col="wide">
+    // (41:0) <Media col="wide">
     function create_default_slot$5(ctx) {
     	let if_block_anchor;
     	let current;
@@ -24017,7 +24017,7 @@ void main() {
     		block,
     		id: create_default_slot$5.name,
     		type: "slot",
-    		source: "(39:0) <Media col=\\\"wide\\\">",
+    		source: "(41:0) <Media col=\\\"wide\\\">",
     		ctx
     	});
 
@@ -24192,7 +24192,7 @@ void main() {
     	return child_ctx;
     }
 
-    // (29:0) <Section>
+    // (31:0) <Section>
     function create_default_slot_1$4(ctx) {
     	let h2;
     	let t1;
@@ -24221,11 +24221,11 @@ void main() {
     			mark2 = element("mark");
     			mark2.textContent = "receiving yards";
     			t8 = text(".");
-    			add_location(h2, file$4, 29, 4, 710);
-    			add_location(mark0, file$4, 32, 22, 899);
-    			add_location(mark1, file$4, 32, 66, 943);
-    			add_location(mark2, file$4, 32, 92, 969);
-    			add_location(p, file$4, 30, 4, 755);
+    			add_location(h2, file$4, 31, 4, 816);
+    			add_location(mark0, file$4, 34, 22, 1005);
+    			add_location(mark1, file$4, 34, 66, 1049);
+    			add_location(mark2, file$4, 34, 92, 1075);
+    			add_location(p, file$4, 32, 4, 861);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -24250,14 +24250,14 @@ void main() {
     		block,
     		id: create_default_slot_1$4.name,
     		type: "slot",
-    		source: "(29:0) <Section>",
+    		source: "(31:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (38:4) {#if data && xKey && yKey }
+    // (40:4) {#if data && xKey && yKey }
     function create_if_block$4(ctx) {
     	let div0;
     	let scatterchart;
@@ -24317,20 +24317,20 @@ void main() {
 
     			br = element("br");
     			attr_dev(p, "class", "x-label");
-    			add_location(p, file$4, 40, 12, 1206);
+    			add_location(p, file$4, 42, 12, 1312);
     			attr_dev(div0, "class", "media");
     			set_style(div0, "height", "400px");
-    			add_location(div0, file$4, 38, 8, 1079);
+    			add_location(div0, file$4, 40, 8, 1185);
     			set_style(h3, "padding-bottom", "10px");
-    			add_location(h3, file$4, 43, 12, 1314);
+    			add_location(h3, file$4, 45, 12, 1420);
     			attr_dev(span, "class", "label-block");
-    			add_location(span, file$4, 44, 12, 1381);
+    			add_location(span, file$4, 46, 12, 1487);
     			if (/*yKey*/ ctx[1] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[5].call(select));
-    			add_location(select, file$4, 45, 12, 1433);
-    			add_location(br, file$4, 49, 21, 1623);
+    			add_location(select, file$4, 47, 12, 1539);
+    			add_location(br, file$4, 51, 21, 1729);
     			attr_dev(div1, "class", "media");
     			set_style(div1, "margin-top", "80px");
-    			add_location(div1, file$4, 42, 8, 1257);
+    			add_location(div1, file$4, 44, 8, 1363);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -24416,14 +24416,14 @@ void main() {
     		block,
     		id: create_if_block$4.name,
     		type: "if",
-    		source: "(38:4) {#if data && xKey && yKey }",
+    		source: "(40:4) {#if data && xKey && yKey }",
     		ctx
     	});
 
     	return block;
     }
 
-    // (47:16) {#each Object.keys(dataKeys) as key}
+    // (49:16) {#each Object.keys(dataKeys) as key}
     function create_each_block$3(ctx) {
     	let option;
     	let t_value = /*dataKeys*/ ctx[2][/*key*/ ctx[6]] + "";
@@ -24435,7 +24435,7 @@ void main() {
     			t = text(t_value);
     			option.__value = /*key*/ ctx[6];
     			option.value = option.__value;
-    			add_location(option, file$4, 47, 20, 1533);
+    			add_location(option, file$4, 49, 20, 1639);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -24451,14 +24451,14 @@ void main() {
     		block,
     		id: create_each_block$3.name,
     		type: "each",
-    		source: "(47:16) {#each Object.keys(dataKeys) as key}",
+    		source: "(49:16) {#each Object.keys(dataKeys) as key}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:0) <Media col="wide">
+    // (39:0) <Media col="wide">
     function create_default_slot$4(ctx) {
     	let if_block_anchor;
     	let current;
@@ -24517,7 +24517,7 @@ void main() {
     		block,
     		id: create_default_slot$4.name,
     		type: "slot",
-    		source: "(37:0) <Media col=\\\"wide\\\">",
+    		source: "(39:0) <Media col=\\\"wide\\\">",
     		ctx
     	});
 
@@ -24692,7 +24692,7 @@ void main() {
     	return child_ctx;
     }
 
-    // (30:0) <Section>
+    // (32:0) <Section>
     function create_default_slot_1$3(ctx) {
     	let h2;
     	let t1;
@@ -24716,10 +24716,10 @@ void main() {
     			mark1 = element("mark");
     			mark1.textContent = "rushing touchdowns";
     			t6 = text(" (running the ball\n        into the end zone for a touchdown).");
-    			add_location(h2, file$3, 30, 4, 711);
-    			add_location(mark0, file$3, 33, 34, 908);
-    			add_location(mark1, file$3, 34, 67, 1056);
-    			add_location(p, file$3, 31, 4, 754);
+    			add_location(h2, file$3, 32, 4, 815);
+    			add_location(mark0, file$3, 35, 34, 1012);
+    			add_location(mark1, file$3, 36, 67, 1160);
+    			add_location(p, file$3, 33, 4, 858);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -24742,14 +24742,14 @@ void main() {
     		block,
     		id: create_default_slot_1$3.name,
     		type: "slot",
-    		source: "(30:0) <Section>",
+    		source: "(32:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (41:4) {#if data && xKey && yKey }
+    // (43:4) {#if data && xKey && yKey }
     function create_if_block$3(ctx) {
     	let div0;
     	let scatterchart;
@@ -24809,20 +24809,20 @@ void main() {
 
     			br = element("br");
     			attr_dev(p, "class", "x-label");
-    			add_location(p, file$3, 43, 12, 1357);
+    			add_location(p, file$3, 45, 12, 1461);
     			attr_dev(div0, "class", "media");
     			set_style(div0, "height", "400px");
-    			add_location(div0, file$3, 41, 8, 1230);
+    			add_location(div0, file$3, 43, 8, 1334);
     			set_style(h3, "padding-bottom", "10px");
-    			add_location(h3, file$3, 46, 12, 1465);
+    			add_location(h3, file$3, 48, 12, 1569);
     			attr_dev(span, "class", "label-block");
-    			add_location(span, file$3, 47, 12, 1532);
+    			add_location(span, file$3, 49, 12, 1636);
     			if (/*yKey*/ ctx[1] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[5].call(select));
-    			add_location(select, file$3, 48, 12, 1584);
-    			add_location(br, file$3, 52, 21, 1774);
+    			add_location(select, file$3, 50, 12, 1688);
+    			add_location(br, file$3, 54, 21, 1878);
     			attr_dev(div1, "class", "media");
     			set_style(div1, "margin-top", "80px");
-    			add_location(div1, file$3, 45, 8, 1408);
+    			add_location(div1, file$3, 47, 8, 1512);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -24908,14 +24908,14 @@ void main() {
     		block,
     		id: create_if_block$3.name,
     		type: "if",
-    		source: "(41:4) {#if data && xKey && yKey }",
+    		source: "(43:4) {#if data && xKey && yKey }",
     		ctx
     	});
 
     	return block;
     }
 
-    // (50:16) {#each Object.keys(dataKeys) as key}
+    // (52:16) {#each Object.keys(dataKeys) as key}
     function create_each_block$2(ctx) {
     	let option;
     	let t_value = /*dataKeys*/ ctx[2][/*key*/ ctx[6]] + "";
@@ -24927,7 +24927,7 @@ void main() {
     			t = text(t_value);
     			option.__value = /*key*/ ctx[6];
     			option.value = option.__value;
-    			add_location(option, file$3, 50, 20, 1684);
+    			add_location(option, file$3, 52, 20, 1788);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -24943,14 +24943,14 @@ void main() {
     		block,
     		id: create_each_block$2.name,
     		type: "each",
-    		source: "(50:16) {#each Object.keys(dataKeys) as key}",
+    		source: "(52:16) {#each Object.keys(dataKeys) as key}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (40:0) <Media col="wide">
+    // (42:0) <Media col="wide">
     function create_default_slot$3(ctx) {
     	let if_block_anchor;
     	let current;
@@ -25009,7 +25009,7 @@ void main() {
     		block,
     		id: create_default_slot$3.name,
     		type: "slot",
-    		source: "(40:0) <Media col=\\\"wide\\\">",
+    		source: "(42:0) <Media col=\\\"wide\\\">",
     		ctx
     	});
 
@@ -25184,7 +25184,7 @@ void main() {
     	return child_ctx;
     }
 
-    // (29:0) <Section>
+    // (31:0) <Section>
     function create_default_slot_1$2(ctx) {
     	let h2;
     	let t1;
@@ -25208,10 +25208,10 @@ void main() {
     			mark1 = element("mark");
     			mark1.textContent = "rushing touchdowns";
     			t6 = text(".");
-    			add_location(h2, file$2, 29, 4, 707);
-    			add_location(mark0, file$2, 32, 26, 895);
-    			add_location(mark1, file$2, 32, 68, 937);
-    			add_location(p, file$2, 30, 4, 745);
+    			add_location(h2, file$2, 31, 4, 806);
+    			add_location(mark0, file$2, 34, 26, 994);
+    			add_location(mark1, file$2, 34, 68, 1036);
+    			add_location(p, file$2, 32, 4, 844);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -25234,14 +25234,14 @@ void main() {
     		block,
     		id: create_default_slot_1$2.name,
     		type: "slot",
-    		source: "(29:0) <Section>",
+    		source: "(31:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (38:4) {#if data && xKey && yKey }
+    // (40:4) {#if data && xKey && yKey }
     function create_if_block$2(ctx) {
     	let div0;
     	let scatterchart;
@@ -25301,20 +25301,20 @@ void main() {
 
     			br = element("br");
     			attr_dev(p, "class", "x-label");
-    			add_location(p, file$2, 40, 12, 1177);
+    			add_location(p, file$2, 42, 12, 1276);
     			attr_dev(div0, "class", "media");
     			set_style(div0, "height", "400px");
-    			add_location(div0, file$2, 38, 8, 1050);
+    			add_location(div0, file$2, 40, 8, 1149);
     			set_style(h3, "padding-bottom", "10px");
-    			add_location(h3, file$2, 43, 12, 1285);
+    			add_location(h3, file$2, 45, 12, 1384);
     			attr_dev(span, "class", "label-block");
-    			add_location(span, file$2, 44, 12, 1352);
+    			add_location(span, file$2, 46, 12, 1451);
     			if (/*yKey*/ ctx[1] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[5].call(select));
-    			add_location(select, file$2, 45, 12, 1404);
-    			add_location(br, file$2, 49, 21, 1594);
+    			add_location(select, file$2, 47, 12, 1503);
+    			add_location(br, file$2, 51, 21, 1693);
     			attr_dev(div1, "class", "media");
     			set_style(div1, "margin-top", "80px");
-    			add_location(div1, file$2, 42, 8, 1228);
+    			add_location(div1, file$2, 44, 8, 1327);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -25400,14 +25400,14 @@ void main() {
     		block,
     		id: create_if_block$2.name,
     		type: "if",
-    		source: "(38:4) {#if data && xKey && yKey }",
+    		source: "(40:4) {#if data && xKey && yKey }",
     		ctx
     	});
 
     	return block;
     }
 
-    // (47:16) {#each Object.keys(dataKeys) as key}
+    // (49:16) {#each Object.keys(dataKeys) as key}
     function create_each_block$1(ctx) {
     	let option;
     	let t_value = /*dataKeys*/ ctx[2][/*key*/ ctx[6]] + "";
@@ -25419,7 +25419,7 @@ void main() {
     			t = text(t_value);
     			option.__value = /*key*/ ctx[6];
     			option.value = option.__value;
-    			add_location(option, file$2, 47, 20, 1504);
+    			add_location(option, file$2, 49, 20, 1603);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -25435,14 +25435,14 @@ void main() {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(47:16) {#each Object.keys(dataKeys) as key}",
+    		source: "(49:16) {#each Object.keys(dataKeys) as key}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:0) <Media col="wide">
+    // (39:0) <Media col="wide">
     function create_default_slot$2(ctx) {
     	let if_block_anchor;
     	let current;
@@ -25501,7 +25501,7 @@ void main() {
     		block,
     		id: create_default_slot$2.name,
     		type: "slot",
-    		source: "(37:0) <Media col=\\\"wide\\\">",
+    		source: "(39:0) <Media col=\\\"wide\\\">",
     		ctx
     	});
 
@@ -25676,7 +25676,7 @@ void main() {
     	return child_ctx;
     }
 
-    // (28:0) <Section>
+    // (30:0) <Section>
     function create_default_slot_1$1(ctx) {
     	let h2;
     	let t1;
@@ -25700,10 +25700,10 @@ void main() {
     			mark1 = element("mark");
     			mark1.textContent = "extra points";
     			t6 = text(" made.");
-    			add_location(h2, file$1, 28, 4, 676);
-    			add_location(mark0, file$1, 31, 16, 853);
-    			add_location(mark1, file$1, 31, 48, 885);
-    			add_location(p, file$1, 29, 4, 714);
+    			add_location(h2, file$1, 30, 4, 775);
+    			add_location(mark0, file$1, 33, 16, 952);
+    			add_location(mark1, file$1, 33, 48, 984);
+    			add_location(p, file$1, 31, 4, 813);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -25726,14 +25726,14 @@ void main() {
     		block,
     		id: create_default_slot_1$1.name,
     		type: "slot",
-    		source: "(28:0) <Section>",
+    		source: "(30:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:4) {#if data && xKey && yKey }
+    // (39:4) {#if data && xKey && yKey }
     function create_if_block$1(ctx) {
     	let div0;
     	let scatterchart;
@@ -25793,20 +25793,20 @@ void main() {
 
     			br = element("br");
     			attr_dev(p, "class", "x-label");
-    			add_location(p, file$1, 39, 12, 1124);
+    			add_location(p, file$1, 41, 12, 1223);
     			attr_dev(div0, "class", "media");
     			set_style(div0, "height", "400px");
-    			add_location(div0, file$1, 37, 8, 997);
+    			add_location(div0, file$1, 39, 8, 1096);
     			set_style(h3, "padding-bottom", "10px");
-    			add_location(h3, file$1, 42, 12, 1232);
+    			add_location(h3, file$1, 44, 12, 1331);
     			attr_dev(span, "class", "label-block");
-    			add_location(span, file$1, 43, 12, 1299);
+    			add_location(span, file$1, 45, 12, 1398);
     			if (/*yKey*/ ctx[1] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[5].call(select));
-    			add_location(select, file$1, 44, 12, 1351);
-    			add_location(br, file$1, 48, 21, 1541);
+    			add_location(select, file$1, 46, 12, 1450);
+    			add_location(br, file$1, 50, 21, 1640);
     			attr_dev(div1, "class", "media");
     			set_style(div1, "margin-top", "80px");
-    			add_location(div1, file$1, 41, 8, 1175);
+    			add_location(div1, file$1, 43, 8, 1274);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -25892,14 +25892,14 @@ void main() {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(37:4) {#if data && xKey && yKey }",
+    		source: "(39:4) {#if data && xKey && yKey }",
     		ctx
     	});
 
     	return block;
     }
 
-    // (46:16) {#each Object.keys(dataKeys) as key}
+    // (48:16) {#each Object.keys(dataKeys) as key}
     function create_each_block(ctx) {
     	let option;
     	let t_value = /*dataKeys*/ ctx[2][/*key*/ ctx[6]] + "";
@@ -25911,7 +25911,7 @@ void main() {
     			t = text(t_value);
     			option.__value = /*key*/ ctx[6];
     			option.value = option.__value;
-    			add_location(option, file$1, 46, 20, 1451);
+    			add_location(option, file$1, 48, 20, 1550);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -25927,14 +25927,14 @@ void main() {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(46:16) {#each Object.keys(dataKeys) as key}",
+    		source: "(48:16) {#each Object.keys(dataKeys) as key}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (36:0) <Media col="wide">
+    // (38:0) <Media col="wide">
     function create_default_slot$1(ctx) {
     	let if_block_anchor;
     	let current;
@@ -25993,7 +25993,7 @@ void main() {
     		block,
     		id: create_default_slot$1.name,
     		type: "slot",
-    		source: "(36:0) <Media col=\\\"wide\\\">",
+    		source: "(38:0) <Media col=\\\"wide\\\">",
     		ctx
     	});
 
@@ -26379,7 +26379,6 @@ void main() {
 
     	scatterchart = new ScatterChart({
     			props: {
-    				padding: 15,
     				diameter: /*diameter*/ ctx[5],
     				data: /*data*/ ctx[1],
     				xKey: /*xKey*/ ctx[6],
@@ -26397,7 +26396,7 @@ void main() {
     			div = element("div");
     			create_component(scatterchart.$$.fragment);
     			attr_dev(div, "class", "chart svelte-1qbchbs");
-    			add_location(div, file, 150, 4, 4446);
+    			add_location(div, file, 150, 4, 4571);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -26462,15 +26461,15 @@ void main() {
     			div0 = element("div");
     			if (if_block) if_block.c();
     			attr_dev(p0, "class", "y-label svelte-1qbchbs");
-    			add_location(p0, file, 146, 3, 4263);
+    			add_location(p0, file, 146, 3, 4388);
     			attr_dev(p1, "class", "x-label svelte-1qbchbs");
-    			add_location(p1, file, 147, 3, 4304);
+    			add_location(p1, file, 147, 3, 4429);
     			attr_dev(div0, "class", "col-wide middle");
-    			add_location(div0, file, 148, 3, 4335);
+    			add_location(div0, file, 148, 3, 4460);
     			attr_dev(figure, "class", "main-scatter");
-    			add_location(figure, file, 145, 2, 4230);
+    			add_location(figure, file, 145, 2, 4355);
     			attr_dev(div1, "slot", "background");
-    			add_location(div1, file, 144, 1, 4204);
+    			add_location(div1, file, 144, 1, 4329);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -26533,7 +26532,7 @@ void main() {
     	return block;
     }
 
-    // (188:5) <Em>
+    // (189:5) <Em>
     function create_default_slot_21(ctx) {
     	let t;
 
@@ -26553,14 +26552,14 @@ void main() {
     		block,
     		id: create_default_slot_21.name,
     		type: "slot",
-    		source: "(188:5) <Em>",
+    		source: "(189:5) <Em>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (201:5) <Em>
+    // (202:5) <Em>
     function create_default_slot_20(ctx) {
     	let t;
 
@@ -26580,14 +26579,14 @@ void main() {
     		block,
     		id: create_default_slot_20.name,
     		type: "slot",
-    		source: "(201:5) <Em>",
+    		source: "(202:5) <Em>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (214:5) <Em>
+    // (215:5) <Em>
     function create_default_slot_19(ctx) {
     	let t;
 
@@ -26607,14 +26606,14 @@ void main() {
     		block,
     		id: create_default_slot_19.name,
     		type: "slot",
-    		source: "(214:5) <Em>",
+    		source: "(215:5) <Em>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (227:5) <Em>
+    // (228:5) <Em>
     function create_default_slot_18(ctx) {
     	let t;
 
@@ -26634,14 +26633,14 @@ void main() {
     		block,
     		id: create_default_slot_18.name,
     		type: "slot",
-    		source: "(227:5) <Em>",
+    		source: "(228:5) <Em>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (240:5) <Em>
+    // (241:5) <Em>
     function create_default_slot_17(ctx) {
     	let t;
 
@@ -26661,14 +26660,14 @@ void main() {
     		block,
     		id: create_default_slot_17.name,
     		type: "slot",
-    		source: "(240:5) <Em>",
+    		source: "(241:5) <Em>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (253:5) <Em>
+    // (254:5) <Em>
     function create_default_slot_16(ctx) {
     	let t;
 
@@ -26688,14 +26687,14 @@ void main() {
     		block,
     		id: create_default_slot_16.name,
     		type: "slot",
-    		source: "(253:5) <Em>",
+    		source: "(254:5) <Em>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (266:5) <Em>
+    // (267:5) <Em>
     function create_default_slot_15(ctx) {
     	let t;
 
@@ -26715,14 +26714,14 @@ void main() {
     		block,
     		id: create_default_slot_15.name,
     		type: "slot",
-    		source: "(266:5) <Em>",
+    		source: "(267:5) <Em>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (279:5) <Em>
+    // (280:5) <Em>
     function create_default_slot_14(ctx) {
     	let t;
 
@@ -26742,14 +26741,14 @@ void main() {
     		block,
     		id: create_default_slot_14.name,
     		type: "slot",
-    		source: "(279:5) <Em>",
+    		source: "(280:5) <Em>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (292:5) <Em>
+    // (293:5) <Em>
     function create_default_slot_13(ctx) {
     	let t;
 
@@ -26769,14 +26768,14 @@ void main() {
     		block,
     		id: create_default_slot_13.name,
     		type: "slot",
-    		source: "(292:5) <Em>",
+    		source: "(293:5) <Em>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (305:5) <Em>
+    // (306:5) <Em>
     function create_default_slot_12(ctx) {
     	let t;
 
@@ -26796,14 +26795,14 @@ void main() {
     		block,
     		id: create_default_slot_12.name,
     		type: "slot",
-    		source: "(305:5) <Em>",
+    		source: "(306:5) <Em>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (318:5) <Em>
+    // (319:5) <Em>
     function create_default_slot_11(ctx) {
     	let t;
 
@@ -26823,14 +26822,14 @@ void main() {
     		block,
     		id: create_default_slot_11.name,
     		type: "slot",
-    		source: "(318:5) <Em>",
+    		source: "(319:5) <Em>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (331:5) <Em>
+    // (332:5) <Em>
     function create_default_slot_10(ctx) {
     	let t;
 
@@ -26850,7 +26849,7 @@ void main() {
     		block,
     		id: create_default_slot_10.name,
     		type: "slot",
-    		source: "(331:5) <Em>",
+    		source: "(332:5) <Em>",
     		ctx
     	});
 
@@ -27404,192 +27403,192 @@ void main() {
     			t97 = text("Position: Kicker\n\t\t\t\t\t");
     			br35 = element("br");
     			t98 = text("Team: New England Patriots");
-    			add_location(mark, file, 164, 25, 4882);
-    			add_location(p0, file, 161, 4, 4696);
+    			add_location(mark, file, 164, 25, 4994);
+    			add_location(p0, file, 161, 4, 4808);
     			attr_dev(h3, "class", "center svelte-1qbchbs");
-    			add_location(h3, file, 167, 4, 5016);
+    			add_location(h3, file, 168, 4, 5159);
     			attr_dev(span0, "class", "grid-item svelte-1qbchbs");
     			set_style(span0, "background-color", "rgb(166,206,227,0.8)");
-    			add_location(span0, file, 169, 5, 5088);
+    			add_location(span0, file, 170, 5, 5231);
     			attr_dev(span1, "class", "grid-item svelte-1qbchbs");
     			set_style(span1, "background-color", "rgb(31,120,180,0.8)");
-    			add_location(span1, file, 170, 5, 5185);
+    			add_location(span1, file, 171, 5, 5328);
     			attr_dev(span2, "class", "grid-item svelte-1qbchbs");
     			set_style(span2, "background-color", "rgb(178,223,138,0.8)");
-    			add_location(span2, file, 171, 5, 5284);
+    			add_location(span2, file, 172, 5, 5427);
     			attr_dev(span3, "class", "grid-item svelte-1qbchbs");
     			set_style(span3, "background-color", "rgb(51,160,44,0.8)");
-    			add_location(span3, file, 172, 5, 5384);
+    			add_location(span3, file, 173, 5, 5527);
     			attr_dev(span4, "class", "grid-item svelte-1qbchbs");
     			set_style(span4, "background-color", "rgb(251,154,153,0.8)");
-    			add_location(span4, file, 173, 5, 5480);
+    			add_location(span4, file, 174, 5, 5623);
     			attr_dev(span5, "class", "grid-item svelte-1qbchbs");
     			set_style(span5, "background-color", "rgb(227,26,28,0.8)");
-    			add_location(span5, file, 174, 5, 5577);
+    			add_location(span5, file, 175, 5, 5720);
     			attr_dev(span6, "class", "grid-item svelte-1qbchbs");
     			set_style(span6, "background-color", "rgb(253,191,111,0.8)");
-    			add_location(span6, file, 175, 5, 5672);
+    			add_location(span6, file, 176, 5, 5815);
     			attr_dev(span7, "class", "grid-item svelte-1qbchbs");
     			set_style(span7, "background-color", "rgb(255,127,0,0.8)");
-    			add_location(span7, file, 176, 5, 5772);
+    			add_location(span7, file, 177, 5, 5915);
     			attr_dev(span8, "class", "grid-item svelte-1qbchbs");
     			set_style(span8, "background-color", "rgb(202,178,214,0.8)");
-    			add_location(span8, file, 177, 5, 5869);
+    			add_location(span8, file, 178, 5, 6012);
     			attr_dev(span9, "class", "grid-item svelte-1qbchbs");
     			set_style(span9, "background-color", "rgb(106,61,154,0.8)");
-    			add_location(span9, file, 178, 5, 5967);
+    			add_location(span9, file, 179, 5, 6110);
     			attr_dev(span10, "class", "grid-item svelte-1qbchbs");
     			set_style(span10, "background-color", "rgb(255,255,153,0.8)");
-    			add_location(span10, file, 179, 5, 6059);
+    			add_location(span10, file, 180, 5, 6202);
     			attr_dev(span11, "class", "grid-item svelte-1qbchbs");
     			set_style(span11, "background-color", "rgb(177,89,40,0.8)");
-    			add_location(span11, file, 180, 5, 6156);
+    			add_location(span11, file, 181, 5, 6299);
     			attr_dev(div0, "class", "legend-grid svelte-1qbchbs");
-    			add_location(div0, file, 168, 4, 5057);
+    			add_location(div0, file, 169, 4, 5200);
     			attr_dev(div1, "class", "col-medium");
-    			add_location(div1, file, 160, 3, 4667);
-    			add_location(section0, file, 159, 2, 4654);
-    			add_location(br0, file, 188, 5, 6358);
-    			add_location(br1, file, 189, 5, 6375);
-    			add_location(br2, file, 190, 5, 6406);
-    			add_location(p1, file, 186, 4, 6320);
+    			add_location(div1, file, 160, 3, 4779);
+    			add_location(section0, file, 159, 2, 4766);
+    			add_location(br0, file, 189, 5, 6501);
+    			add_location(br1, file, 190, 5, 6518);
+    			add_location(br2, file, 191, 5, 6549);
+    			add_location(p1, file, 187, 4, 6463);
     			if (!src_url_equal(img0.src, img0_src_value = "./img/jackson.jpg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Lamar Jackson");
-    			add_location(img0, file, 193, 5, 6471);
+    			add_location(img0, file, 194, 5, 6614);
     			attr_dev(div2, "class", "media");
-    			add_location(div2, file, 192, 4, 6446);
+    			add_location(div2, file, 193, 4, 6589);
     			attr_dev(div3, "class", "col-medium");
-    			add_location(div3, file, 185, 3, 6291);
-    			add_location(section1, file, 184, 2, 6278);
-    			add_location(br3, file, 201, 5, 6640);
-    			add_location(br4, file, 202, 5, 6657);
-    			add_location(br5, file, 203, 5, 6690);
-    			add_location(p2, file, 199, 4, 6599);
+    			add_location(div3, file, 186, 3, 6434);
+    			add_location(section1, file, 185, 2, 6421);
+    			add_location(br3, file, 202, 5, 6783);
+    			add_location(br4, file, 203, 5, 6800);
+    			add_location(br5, file, 204, 5, 6833);
+    			add_location(p2, file, 200, 4, 6742);
     			if (!src_url_equal(img1.src, img1_src_value = "./img/jefferson.jpg")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Justin Jefferson");
-    			add_location(img1, file, 206, 5, 6756);
+    			add_location(img1, file, 207, 5, 6899);
     			attr_dev(div4, "class", "media");
-    			add_location(div4, file, 205, 4, 6731);
+    			add_location(div4, file, 206, 4, 6874);
     			attr_dev(div5, "class", "col-medium");
-    			add_location(div5, file, 198, 3, 6570);
-    			add_location(section2, file, 197, 2, 6557);
-    			add_location(br6, file, 214, 5, 6930);
-    			add_location(br7, file, 215, 5, 6947);
-    			add_location(br8, file, 216, 5, 6979);
-    			add_location(p3, file, 212, 4, 6889);
+    			add_location(div5, file, 199, 3, 6713);
+    			add_location(section2, file, 198, 2, 6700);
+    			add_location(br6, file, 215, 5, 7073);
+    			add_location(br7, file, 216, 5, 7090);
+    			add_location(br8, file, 217, 5, 7122);
+    			add_location(p3, file, 213, 4, 7032);
     			if (!src_url_equal(img2.src, img2_src_value = "./img/singletary.jpg")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "Devin Singletary");
-    			add_location(img2, file, 219, 5, 7041);
+    			add_location(img2, file, 220, 5, 7184);
     			attr_dev(div6, "class", "media");
-    			add_location(div6, file, 218, 4, 7016);
+    			add_location(div6, file, 219, 4, 7159);
     			attr_dev(div7, "class", "col-medium");
-    			add_location(div7, file, 211, 3, 6860);
-    			add_location(section3, file, 210, 2, 6847);
-    			add_location(br9, file, 227, 5, 7214);
-    			add_location(br10, file, 228, 5, 7231);
-    			add_location(br11, file, 229, 5, 7260);
-    			add_location(p4, file, 225, 4, 7175);
+    			add_location(div7, file, 212, 3, 7003);
+    			add_location(section3, file, 211, 2, 6990);
+    			add_location(br9, file, 228, 5, 7357);
+    			add_location(br10, file, 229, 5, 7374);
+    			add_location(br11, file, 230, 5, 7403);
+    			add_location(p4, file, 226, 4, 7318);
     			if (!src_url_equal(img3.src, img3_src_value = "./img/goedert.jpg")) attr_dev(img3, "src", img3_src_value);
     			attr_dev(img3, "alt", "Dallas Goedert");
-    			add_location(img3, file, 232, 5, 7328);
+    			add_location(img3, file, 233, 5, 7471);
     			attr_dev(div8, "class", "media");
-    			add_location(div8, file, 231, 4, 7303);
+    			add_location(div8, file, 232, 4, 7446);
     			attr_dev(div9, "class", "col-medium");
-    			add_location(div9, file, 224, 3, 7146);
-    			add_location(section4, file, 223, 2, 7133);
-    			add_location(br12, file, 240, 5, 7495);
-    			add_location(br13, file, 241, 5, 7512);
-    			add_location(br14, file, 242, 5, 7545);
-    			add_location(p5, file, 238, 4, 7457);
+    			add_location(div9, file, 225, 3, 7289);
+    			add_location(section4, file, 224, 2, 7276);
+    			add_location(br12, file, 241, 5, 7638);
+    			add_location(br13, file, 242, 5, 7655);
+    			add_location(br14, file, 243, 5, 7688);
+    			add_location(p5, file, 239, 4, 7600);
     			if (!src_url_equal(img4.src, img4_src_value = "./img/chase.jpg")) attr_dev(img4, "src", img4_src_value);
     			attr_dev(img4, "alt", "Ja'Marr Chase");
-    			add_location(img4, file, 245, 5, 7612);
+    			add_location(img4, file, 246, 5, 7755);
     			attr_dev(div10, "class", "media");
-    			add_location(div10, file, 244, 4, 7587);
+    			add_location(div10, file, 245, 4, 7730);
     			attr_dev(div11, "class", "col-medium");
-    			add_location(div11, file, 237, 3, 7428);
-    			add_location(section5, file, 236, 2, 7415);
-    			add_location(br15, file, 253, 5, 7776);
-    			add_location(br16, file, 254, 5, 7793);
-    			add_location(br17, file, 255, 5, 7826);
-    			add_location(p6, file, 251, 4, 7738);
+    			add_location(div11, file, 238, 3, 7571);
+    			add_location(section5, file, 237, 2, 7558);
+    			add_location(br15, file, 254, 5, 7919);
+    			add_location(br16, file, 255, 5, 7936);
+    			add_location(br17, file, 256, 5, 7969);
+    			add_location(p6, file, 252, 4, 7881);
     			if (!src_url_equal(img5.src, img5_src_value = "./img/smith.jpg")) attr_dev(img5, "src", img5_src_value);
     			attr_dev(img5, "alt", "DeVonta Smith");
-    			add_location(img5, file, 258, 5, 7894);
+    			add_location(img5, file, 259, 5, 8037);
     			attr_dev(div12, "class", "media");
-    			add_location(div12, file, 257, 4, 7869);
+    			add_location(div12, file, 258, 4, 8012);
     			attr_dev(div13, "class", "col-medium");
-    			add_location(div13, file, 250, 3, 7709);
-    			add_location(section6, file, 249, 2, 7696);
-    			add_location(br18, file, 266, 5, 8061);
-    			add_location(br19, file, 267, 5, 8078);
-    			add_location(br20, file, 268, 5, 8111);
-    			add_location(p7, file, 264, 4, 8020);
+    			add_location(div13, file, 251, 3, 7852);
+    			add_location(section6, file, 250, 2, 7839);
+    			add_location(br18, file, 267, 5, 8204);
+    			add_location(br19, file, 268, 5, 8221);
+    			add_location(br20, file, 269, 5, 8254);
+    			add_location(p7, file, 265, 4, 8163);
     			if (!src_url_equal(img6.src, img6_src_value = "./img/van_jefferson.jpg")) attr_dev(img6, "src", img6_src_value);
     			attr_dev(img6, "alt", "Van Jefferson Jr");
-    			add_location(img6, file, 271, 5, 8176);
+    			add_location(img6, file, 272, 5, 8319);
     			attr_dev(div14, "class", "media");
-    			add_location(div14, file, 270, 4, 8151);
+    			add_location(div14, file, 271, 4, 8294);
     			attr_dev(div15, "class", "col-medium");
-    			add_location(div15, file, 263, 3, 7991);
-    			add_location(section7, file, 262, 2, 7978);
-    			add_location(br21, file, 279, 5, 8354);
-    			add_location(br22, file, 280, 5, 8371);
-    			add_location(br23, file, 281, 5, 8404);
-    			add_location(p8, file, 277, 4, 8313);
+    			add_location(div15, file, 264, 3, 8134);
+    			add_location(section7, file, 263, 2, 8121);
+    			add_location(br21, file, 280, 5, 8497);
+    			add_location(br22, file, 281, 5, 8514);
+    			add_location(br23, file, 282, 5, 8547);
+    			add_location(p8, file, 278, 4, 8456);
     			if (!src_url_equal(img7.src, img7_src_value = "./img/beckham.jpg")) attr_dev(img7, "src", img7_src_value);
     			attr_dev(img7, "alt", "Odell Beckham Jr");
-    			add_location(img7, file, 284, 5, 8469);
+    			add_location(img7, file, 285, 5, 8612);
     			attr_dev(div16, "class", "media");
-    			add_location(div16, file, 283, 4, 8444);
+    			add_location(div16, file, 284, 4, 8587);
     			attr_dev(div17, "class", "col-medium");
-    			add_location(div17, file, 276, 3, 8284);
-    			add_location(section8, file, 275, 2, 8271);
-    			add_location(br24, file, 292, 5, 8639);
-    			add_location(br25, file, 293, 5, 8656);
-    			add_location(br26, file, 294, 5, 8688);
-    			add_location(p9, file, 290, 4, 8600);
+    			add_location(div17, file, 277, 3, 8427);
+    			add_location(section8, file, 276, 2, 8414);
+    			add_location(br24, file, 293, 5, 8782);
+    			add_location(br25, file, 294, 5, 8799);
+    			add_location(br26, file, 295, 5, 8831);
+    			add_location(p9, file, 291, 4, 8743);
     			if (!src_url_equal(img8.src, img8_src_value = "./img/barkley.jpg")) attr_dev(img8, "src", img8_src_value);
     			attr_dev(img8, "alt", "Saquon Barkley");
-    			add_location(img8, file, 297, 5, 8752);
+    			add_location(img8, file, 298, 5, 8895);
     			attr_dev(div18, "class", "media");
-    			add_location(div18, file, 296, 4, 8727);
+    			add_location(div18, file, 297, 4, 8870);
     			attr_dev(div19, "class", "col-medium");
-    			add_location(div19, file, 289, 3, 8571);
-    			add_location(section9, file, 288, 2, 8558);
-    			add_location(br27, file, 305, 5, 8915);
-    			add_location(br28, file, 306, 5, 8932);
-    			add_location(br29, file, 307, 5, 8964);
-    			add_location(p10, file, 303, 4, 8881);
+    			add_location(div19, file, 290, 3, 8714);
+    			add_location(section9, file, 289, 2, 8701);
+    			add_location(br27, file, 306, 5, 9058);
+    			add_location(br28, file, 307, 5, 9075);
+    			add_location(br29, file, 308, 5, 9107);
+    			add_location(p10, file, 304, 4, 9024);
     			if (!src_url_equal(img9.src, img9_src_value = "./img/dillon.jpg")) attr_dev(img9, "src", img9_src_value);
     			attr_dev(img9, "alt", "AJ Dillon");
-    			add_location(img9, file, 310, 5, 9030);
+    			add_location(img9, file, 311, 5, 9173);
     			attr_dev(div20, "class", "media");
-    			add_location(div20, file, 309, 4, 9005);
+    			add_location(div20, file, 310, 4, 9148);
     			attr_dev(div21, "class", "col-medium");
-    			add_location(div21, file, 302, 3, 8852);
-    			add_location(section10, file, 301, 2, 8839);
-    			add_location(br30, file, 318, 5, 9191);
-    			add_location(br31, file, 319, 5, 9208);
-    			add_location(br32, file, 320, 5, 9240);
-    			add_location(p11, file, 316, 4, 9153);
+    			add_location(div21, file, 303, 3, 8995);
+    			add_location(section10, file, 302, 2, 8982);
+    			add_location(br30, file, 319, 5, 9334);
+    			add_location(br31, file, 320, 5, 9351);
+    			add_location(br32, file, 321, 5, 9383);
+    			add_location(p11, file, 317, 4, 9296);
     			if (!src_url_equal(img10.src, img10_src_value = "./img/sanders.jpg")) attr_dev(img10, "src", img10_src_value);
     			attr_dev(img10, "alt", "Miles Sanders");
-    			add_location(img10, file, 323, 5, 9308);
+    			add_location(img10, file, 324, 5, 9451);
     			attr_dev(div22, "class", "media");
-    			add_location(div22, file, 322, 4, 9283);
+    			add_location(div22, file, 323, 4, 9426);
     			attr_dev(div23, "class", "col-medium");
-    			add_location(div23, file, 315, 3, 9124);
-    			add_location(section11, file, 314, 2, 9111);
-    			add_location(br33, file, 331, 5, 9470);
-    			add_location(br34, file, 332, 5, 9487);
-    			add_location(br35, file, 333, 5, 9513);
-    			add_location(p12, file, 329, 4, 9436);
+    			add_location(div23, file, 316, 3, 9267);
+    			add_location(section11, file, 315, 2, 9254);
+    			add_location(br33, file, 332, 5, 9613);
+    			add_location(br34, file, 333, 5, 9630);
+    			add_location(br35, file, 334, 5, 9656);
+    			add_location(p12, file, 330, 4, 9579);
     			attr_dev(div24, "class", "col-medium");
-    			add_location(div24, file, 328, 3, 9407);
-    			add_location(section12, file, 327, 2, 9394);
+    			add_location(div24, file, 329, 3, 9550);
+    			add_location(section12, file, 328, 2, 9537);
     			attr_dev(div25, "slot", "foreground");
-    			add_location(div25, file, 158, 1, 4628);
+    			add_location(div25, file, 158, 1, 4740);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div25, anchor);
@@ -27949,7 +27948,7 @@ void main() {
     	return block;
     }
 
-    // (343:0) <Section>
+    // (346:0) <Section>
     function create_default_slot_9(ctx) {
     	let h2;
     	let t1;
@@ -27962,8 +27961,8 @@ void main() {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Now that we have a better sense of the team as a whole, let's take a closer look at each player as an\n\t\tindividual. Below, you will find an interactive scatterplot for each player on my team's starting roster. The\n\t\tdata shown here is from the 2021-2022 NFL season. The x-axis refers to the week (1 game per week). Use the\n\t\tdropdown menu to toggle the y-axis values. The values will vary slightly depending on the position of the\n\t\tplayer.";
-    			add_location(h2, file, 343, 1, 9621);
-    			add_location(p, file, 344, 1, 9652);
+    			add_location(h2, file, 346, 1, 9908);
+    			add_location(p, file, 347, 1, 9939);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -27981,14 +27980,14 @@ void main() {
     		block,
     		id: create_default_slot_9.name,
     		type: "slot",
-    		source: "(343:0) <Section>",
+    		source: "(346:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (356:0) <Section>
+    // (359:0) <Section>
     function create_default_slot_8(ctx) {
     	let jackson;
     	let current;
@@ -28020,14 +28019,14 @@ void main() {
     		block,
     		id: create_default_slot_8.name,
     		type: "slot",
-    		source: "(356:0) <Section>",
+    		source: "(359:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (362:0) <Section>
+    // (365:0) <Section>
     function create_default_slot_7(ctx) {
     	let jefferson;
     	let current;
@@ -28059,14 +28058,14 @@ void main() {
     		block,
     		id: create_default_slot_7.name,
     		type: "slot",
-    		source: "(362:0) <Section>",
+    		source: "(365:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (368:0) <Section>
+    // (371:0) <Section>
     function create_default_slot_6(ctx) {
     	let chase;
     	let current;
@@ -28098,14 +28097,14 @@ void main() {
     		block,
     		id: create_default_slot_6.name,
     		type: "slot",
-    		source: "(368:0) <Section>",
+    		source: "(371:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (374:0) <Section>
+    // (377:0) <Section>
     function create_default_slot_5(ctx) {
     	let goedert;
     	let current;
@@ -28137,14 +28136,14 @@ void main() {
     		block,
     		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(374:0) <Section>",
+    		source: "(377:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (380:0) <Section>
+    // (383:0) <Section>
     function create_default_slot_4(ctx) {
     	let barkley;
     	let current;
@@ -28176,14 +28175,14 @@ void main() {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(380:0) <Section>",
+    		source: "(383:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (386:0) <Section>
+    // (389:0) <Section>
     function create_default_slot_3(ctx) {
     	let beckham;
     	let current;
@@ -28215,14 +28214,14 @@ void main() {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(386:0) <Section>",
+    		source: "(389:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (392:0) <Section>
+    // (395:0) <Section>
     function create_default_slot_2(ctx) {
     	let dillon;
     	let current;
@@ -28254,14 +28253,14 @@ void main() {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(392:0) <Section>",
+    		source: "(395:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (398:0) <Section>
+    // (401:0) <Section>
     function create_default_slot_1(ctx) {
     	let folk;
     	let current;
@@ -28293,14 +28292,14 @@ void main() {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(398:0) <Section>",
+    		source: "(401:0) <Section>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (404:0) <Section>
+    // (409:0) <Section>
     function create_default_slot(ctx) {
     	let h2;
     	let t1;
@@ -28313,8 +28312,8 @@ void main() {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Let's now take a look outside of the team. Scroll down to explore comparisons by player. Use the dropdown menu\n\t\tto select a position, then explore the parallel coordinates chart using the brushing and filtering interaction\n\t\ttools.";
-    			add_location(h2, file, 404, 1, 10521);
-    			add_location(p, file, 405, 1, 10543);
+    			add_location(h2, file, 409, 1, 10961);
+    			add_location(p, file, 410, 1, 10983);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -28332,7 +28331,7 @@ void main() {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(404:0) <Section>",
+    		source: "(409:0) <Section>",
     		ctx
     	});
 
@@ -28626,7 +28625,7 @@ void main() {
     			attr_dev(iframe, "height", "1050");
     			if (!src_url_equal(iframe.src, iframe_src_value = "https://observablehq.com/embed/@ariana/parallel-coordinates-for-data-viz-final?cells=viewof+position%2CchartLegend%2Cviewof+selection")) attr_dev(iframe, "src", iframe_src_value);
     			attr_dev(iframe, "class", "svelte-1qbchbs");
-    			add_location(iframe, file, 414, 0, 10813);
+    			add_location(iframe, file, 419, 0, 11253);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -28959,7 +28958,7 @@ void main() {
 
     	let animation = getMotion();
     	let data;
-    	let diameter = 20;
+    	let diameter = 15;
     	let xKey = "Year";
     	let yKey = "FantPt";
     	let selected;

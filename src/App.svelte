@@ -39,7 +39,7 @@
 	let animation = getMotion();
 
 	let data;
-	let diameter = 20;
+	let diameter = 15;
 	let xKey = "Year";
 	let yKey = "FantPt";
 	let selected;
@@ -149,7 +149,7 @@
 			<div class="col-wide middle">
 				{#if data && xKey && yKey && categories && colors && catKey && diameter}
 				<div class="chart">
-					<ScatterChart padding={15} {diameter} {data} {xKey} {yKey} {categories} {colors} {selected} {catKey} />
+					<ScatterChart {diameter} {data} {xKey} {yKey} {categories} {colors} {selected} {catKey} />
 				</div>
 				{/if}
 			</div>
