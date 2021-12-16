@@ -18,14 +18,12 @@ The following must be installed in order to run this project locally:
 * node.js/npm -> Run `nvm install node` to get the latest release
 
 ### Steps to Run
-1. Clone the repo. Run: 
-`git clone https://github.com/ari-jorgensen/fantasy-football.git`
-3. Navigate to root directory. Run: 
-`cd fantasy-football`
-5. In root directory, use npm to install all packages. Run: 
-`npm install`
-7. Project is now ready to run. In root directory, simply run 
-`npm run dev` 
-to spin up server. You can now go to https://localhost:5000/ to see the project running.
+1. Clone the repo. Run `git clone https://github.com/ari-jorgensen/fantasy-football.git`
+3. Navigate to root directory. Run `cd fantasy-football`
+5. In root directory, use npm to install all packages. Run `npm install`
+7. Project is now ready to run. In root directory, simply run `npm run dev` to spin up server. 
+
+
+You can now go to https://localhost:5000/ to see the project running.
 The build allows for hotfix updates, so page will reload every time you save a file. 
 If any errors occur, you can try running `npm run build` to rebuild project.
