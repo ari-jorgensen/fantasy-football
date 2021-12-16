@@ -1,3 +1,4 @@
+<!--This file renders the scatterplot for Dallas Goedert -->
 <script>
     import Section from "../layout/Section.svelte";
     import {getData} from "../utils";
@@ -6,6 +7,7 @@
 
     const threshold = 0.65;
 
+    // Stats available for player analysis
     const dataKeys = {
         Ctch_p: "Catching %",
         TD_all: "All Touchdowns",

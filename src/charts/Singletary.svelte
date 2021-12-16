@@ -1,3 +1,4 @@
+<!--This file renders the scatterplot for Devin Singletary -->
 <script>
     import Section from "../layout/Section.svelte";
     import {onMount} from "svelte";
@@ -7,6 +8,7 @@
 
     const threshold = 0.65;
 
+    // Stats available for player analysis
     const dataKeys = {
         Yds_rush: "Rushing Yards Gained",
         Yds_rec: "Receiving Yards",

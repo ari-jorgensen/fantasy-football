@@ -1,3 +1,4 @@
+<!--This file renders the scatterplot for Van Jefferson Jr -->
 <script>
     import Section from "../layout/Section.svelte";
     import {onMount} from "svelte";
@@ -7,13 +8,8 @@
     import Scroller from "../layout/Scroller.svelte";
 
     const threshold = 0.65;
-    // State
-    let index = [];
-    let indexPrev = [];
-    onMount(() => {
-        indexPrev = [...index];
-    });
 
+    // Stats available for player analysis
     const dataKeys = {
         Yds: "Receiving Yards",
         TD_rec: "Receiving Touchdowns",

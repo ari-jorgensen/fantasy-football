@@ -1,3 +1,4 @@
+<!--This file renders the scatterplot for Lamar Jackson -->
 <script>
     import Section from "../layout/Section.svelte";
     import {getData} from "../utils";
@@ -6,6 +7,7 @@
 
     const threshold = 0.65;
 
+    // Stats available for player analysis
     const dataKeys = {
         Cmp_p: "% of Passes Completed",
         TD_P: "Passing Touchdowns",

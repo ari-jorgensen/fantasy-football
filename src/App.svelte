@@ -140,7 +140,7 @@
 </Section>
 
 <Divider />
-
+<!--FIRST SECTION: Scrolly scatterplot that updates its view as user scrolls down page. Controlled by chartActions (above)-->
 <Scroller {threshold} bind:index={index[0]} splitscreen={true}>
 	<div slot="background">
 		<figure class="main-scatter">
@@ -165,6 +165,7 @@
 					individual players. <mark>The value mapped to the y-axis is the total number of
 					fantasy points for that player for a given year.</mark>
 				</p>
+<!--				Hacky color legend!-->
 				<h3 class="center">Color Legend</h3>
 				<div class="legend-grid">
 					<span class="grid-item" style="background-color: rgb(166,206,227,0.8)">Lamar Jackson</span>
@@ -340,6 +341,8 @@
 
 <Divider />
 
+<!--SECOND SECTION: Individual player analysis. Interactive scatterplots that allow user to explore different stats for -->
+<!--each player.-->
 <Section>
 	<h2>Let's dive deeper...</h2>
 	<p>
@@ -401,6 +404,8 @@
 
 <Divider />
 
+<!--THIRD SECTION: NFL player comparisons. Users can switch between different positions to compare my team with players -->
+<!--from other NFL teams.-->
 <Section>
 	<h2>Comparisons</h2>
 	<p>
