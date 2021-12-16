@@ -7,14 +7,14 @@ useful statistic so as to to properly asses the quality of the team, as well as 
 presented.
 
 ## How to Access
-To access the published version of this project, please visit (https://fantasy-football-ari-j.netlify.app/)[fantasy-football-ari-j.netlify.app].
+To access the published version of this project, please visit [fantasy-football-ari-j.netlify.app](https://fantasy-football-ari-j.netlify.app/).
 
 ## How to Run
 The following details the steps required to run this project on your local machine, as well as any software prerequisites.
 
 ### Before Starting
 The following must be installed in order to run this project locally:
-* (https://github.com/nvm-sh/nvm)[nvm] -> Used to install node.js, npm
+* [nvm](https://github.com/nvm-sh/nvm) -> Used to install node.js, npm
 * node.js/npm -> Run `nvm install node` to get the latest release
 
 ### Steps to Run
