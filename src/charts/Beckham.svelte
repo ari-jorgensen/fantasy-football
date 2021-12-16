@@ -30,7 +30,7 @@
     <h2>Odell Beckham Jr: A Closer Look</h2>
     <p>
         Use the dropdown menu to explore available player stats. As a wide receiver, it is especially useful to check
-        out Beckham's catching percentage, number of targets, and receiving yards.
+        out Beckham's <mark>catching percentage</mark>, number of <mark>targets</mark>, and <mark>receiving yards</mark>.
     </p>
 </Section>
 
@@ -38,6 +38,7 @@
     {#if data && xKey && yKey }
         <div class="media" style="height: 400px">
             <ScatterChart diameter={15} {data} {xKey} {yKey} {colors} />
+            <p class="x-label">Week</p>
         </div>
         <div class="media" style="margin-top: 80px">
             <h3 style="padding-bottom: 10px">Explore the data</h3>

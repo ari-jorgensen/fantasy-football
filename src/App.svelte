@@ -19,7 +19,6 @@
 	import Barkley from "./charts/Barkley.svelte";
 	import Dillon from "./charts/Dillon.svelte";
 	import Folk from "./charts/Folk.svelte";
-	import * as d3 from "d3";
 
 	// STYLE CONFIG
 	// Set theme globally (options are 'light' or 'dark')
@@ -444,12 +443,14 @@
 		bottom: 60px;
 		right: 30px;
 		font-weight: bold;
+		font-size: 14px;
 	}
 	.y-label {
 		position: absolute;
 		top: 10px;
 		left: 5px;
 		font-weight: bold;
+		font-size: 14px;
 	}
 	.center {
 		display: block;

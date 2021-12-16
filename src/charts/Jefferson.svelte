@@ -31,9 +31,9 @@
     <h2>Justin Jefferson: A Closer Look</h2>
     <p>
         Use the dropdown menu to explore available player stats. Some particularly interesting stats for this player
-        include the catching percentage (the % of catches made given the total number of targets), the number of
-        fumbles (when a player drops the ball after catching), and both the rushing (running the ball into the end zone)
-        and receiving (catching the ball in the end zone) touchdowns.
+        include the <mark>catching percentage</mark> (the % of catches made given the total number of targets), the number of
+        <mark>fumbles</mark> (when a player drops the ball after catching), and both the rushing (running the ball into the end zone)
+        and receiving (catching the ball in the end zone) <mark>touchdowns</mark>.
     </p>
 </Section>
 
@@ -41,6 +41,7 @@
     {#if data && xKey && yKey }
         <div class="media" style="height: 400px">
             <ScatterChart diameter={15} {data} {xKey} {yKey} {colors} />
+            <p class="x-label">Week</p>
         </div>
         <div class="media" style="margin-top: 80px">
             <h3 style="padding-bottom: 10px">Explore the data</h3>
